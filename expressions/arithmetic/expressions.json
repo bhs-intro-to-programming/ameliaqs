@@ -19,5 +19,12 @@
     "answer": "a*b",
     "correct": true,
     "timestamp": 1668881534402
+  },
+  {
+    "name": "Ratio",
+    "canonical": "a / b",
+    "answer": "a/b",
+    "correct": true,
+    "timestamp": 1668881538183
   }
 ]
