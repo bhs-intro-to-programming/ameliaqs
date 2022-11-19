@@ -68,5 +68,12 @@
     "answer": "\t2*Math.PI*r*h+2*Math.PI*r**2",
     "correct": true,
     "timestamp": 1668882034649
+  },
+  {
+    "name": "Volume of a Cylinder",
+    "canonical": "Math.PI * r ** 2 * h",
+    "answer": "Math.PI*r**2*h",
+    "correct": true,
+    "timestamp": 1668882093602
   }
 ]
