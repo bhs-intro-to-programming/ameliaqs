@@ -40,5 +40,12 @@
     "answer": "'o'",
     "correct": true,
     "timestamp": 1668962347174
+  },
+  {
+    "name": "UPPER CASE",
+    "canonical": "'FOO'",
+    "answer": "'FOO'",
+    "correct": true,
+    "timestamp": 1668962351447
   }
 ]
