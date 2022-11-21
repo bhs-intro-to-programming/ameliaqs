@@ -89,5 +89,12 @@
     "answer": "s.substring(1)",
     "correct": true,
     "timestamp": 1669000785913
+  },
+  {
+    "name": "First three",
+    "canonical": "s.substring(0,3)",
+    "answer": "s.substring(0,3)",
+    "correct": true,
+    "timestamp": 1669000795493
   }
 ]
