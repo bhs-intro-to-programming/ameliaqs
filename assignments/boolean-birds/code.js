@@ -18,6 +18,6 @@
  */
 const isFlobbyBird = (true, true) => {
   const true = red
-  cost true = spotted
+  const true = spotted
 }
 
