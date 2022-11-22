@@ -16,4 +16,4 @@
  *   - Globby Birds eat fish, mice, and nuts.
  *
  */
-const isFlobbyBird = (x) => true && true
+const isFlobbyBird = (red, spotted) => true && true
