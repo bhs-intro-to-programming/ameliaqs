@@ -19,4 +19,4 @@
 const isFlobbyBird = (red, spotted) => {
   const red = red
 }
-]
+
