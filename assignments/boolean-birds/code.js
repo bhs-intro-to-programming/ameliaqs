@@ -24,4 +24,4 @@ const eatsWorms = (red, spotted) => red || spotted
 const eatsNuts = (red, spotted) => red || !spotted
 const eatsFish = (red, spotted) => !red || spotted
 const eatsMice = (red, spotted) => !red || !spotted
-const eatsMice = (Flobby, Bloggy, Flibble, Globby) => Flobby || Bloggy
+const isRed = (Flobby, Bloggy, Flibble, Globby) => Flobby || Bloggy
