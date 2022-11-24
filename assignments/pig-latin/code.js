@@ -36,4 +36,7 @@ const LLadvancedPigLatin = (s) => {
 if (s.search(/[aeiou]/) === 0) {
   (s + 'way')
 }}
-const advancedPigLatin = (s) => (s + 'way')
+const advancedPigLatin = (s) => {
+  if s.search(/[aeiou]/) = 0
+    (s + 'way');
+}
