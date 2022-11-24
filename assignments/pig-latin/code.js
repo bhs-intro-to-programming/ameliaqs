@@ -37,6 +37,6 @@ if (s.search(/[aeiou]/) === 0) {
   (s + 'way')
 }}
 const advancedPigLatin = (s) => {
-  if (s.search(/[aeiou]/)) = 0
+  if (s.search(/[aeiou]/) = 0)
     (s + 'way');
 }
