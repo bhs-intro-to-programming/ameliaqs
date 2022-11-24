@@ -32,4 +32,7 @@
 // Feel free to play around in the REPL to make sure you understand how this
 // operator works.
 const pigLatin = (s) => s.substring((s.search(/[aeiou]/))) + s.substring(0,s.search(/[aeiou]/)) + 'ay'
-const advancedPigLatin = (s) => s + 'way'
+const advancedPigLatin = (s) => {
+if (s.search(/[aeiou]/)) {
+  (s + 'way')
+}}
