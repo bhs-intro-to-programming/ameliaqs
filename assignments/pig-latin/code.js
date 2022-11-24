@@ -33,6 +33,6 @@
 // operator works.
 const pigLatin = (s) => s.substring((s.search(/[aeiou]/))) + s.substring(0,s.search(/[aeiou]/)) + 'ay'
 const advancedPigLatin = (s) => {
-if (s.search(/[aeiou]/) = 0) {
+if (s.search(/[aeiou]/) === 0) {
   (s + 'way')
 }}
