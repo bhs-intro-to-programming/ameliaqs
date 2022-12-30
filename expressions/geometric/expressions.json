@@ -131,5 +131,12 @@
     "answer": "Math.PI*r**2*h",
     "correct": false,
     "timestamp": 1672422283202
+  },
+  {
+    "name": "Volume of a cone",
+    "canonical": "Math.PI * r ** 2 * h / 3",
+    "answer": "Math.PI*r**2*h/3",
+    "correct": true,
+    "timestamp": 1672422287431
   }
 ]
