@@ -23,6 +23,6 @@
  *
  *  clear()
  */
-for (let i = r; i < width; i+r) {
+for (let r=0; r < width; r++) {
   drawFilledCircle(r, height/2, r, 'red')
 }
