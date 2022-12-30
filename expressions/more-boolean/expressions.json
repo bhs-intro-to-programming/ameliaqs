@@ -12,5 +12,12 @@
     "answer": "!storeOpen || !isASale",
     "correct": true,
     "timestamp": 1672422611447
+  },
+  {
+    "name": "Coming to bookclub?",
+    "canonical": "member && !outSick",
+    "answer": "member && !outSick",
+    "correct": true,
+    "timestamp": 1672422624607
   }
 ]
