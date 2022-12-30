@@ -23,6 +23,7 @@
  *
  *  clear()
  */
+const lineOfCircles = (r) => {
 for (let x = r; x < width; x + r) {
   drawFilledCircle(x, height/2, x, 'red')
-}
+}}
