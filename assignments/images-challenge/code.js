@@ -23,5 +23,5 @@
  *
  *  clear()
  */
-const lineOfCircles = (r) => drawFilledCircle(r, height/2, r, red)
+const lineOfCircles = (r) => drawFilledCircle(r, height/2, r, G)
 lineOfCircles(20)
