@@ -33,5 +33,12 @@
     "answer": "fireLit || !haveMatches",
     "correct": true,
     "timestamp": 1672422645840
+  },
+  {
+    "name": "Can pay attention?",
+    "canonical": "!hungry && interested",
+    "answer": "!hungry || interested",
+    "correct": false,
+    "timestamp": 1672422661173
   }
 ]
