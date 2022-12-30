@@ -24,5 +24,5 @@
  *  clear()
  */
 for (let x = r; x < width; x + r) {
-  drawFilledCircle(x, height/2, r, 'red')
+  drawFilledCircle(x, height/2, x, 'red')
 }
