@@ -54,5 +54,12 @@
     "answer": "Math.pi*(r**2)",
     "correct": false,
     "timestamp": 1672422066938
+  },
+  {
+    "name": "Area of a circle",
+    "canonical": "Math.PI*r*r",
+    "answer": "Math.PI*(r**2)",
+    "correct": true,
+    "timestamp": 1672422074572
   }
 ]
