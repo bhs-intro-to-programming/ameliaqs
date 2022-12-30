@@ -24,4 +24,4 @@
  *  clear()
  */
 const lineOfCircles = (r) => drawFilledCircle(r, height/2, r, 'red')
-lineOfCircles(20)
+lineOfCircles(200)
