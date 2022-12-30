@@ -23,4 +23,4 @@
  *
  *  clear()
  */
-drawFilledCircle(1, 1, 1, R)
+drawFilledCircle(1, 1, 1, r)
