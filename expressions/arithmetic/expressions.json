@@ -5,5 +5,12 @@
     "answer": "a+b",
     "correct": true,
     "timestamp": 1672421695824
+  },
+  {
+    "name": "Difference",
+    "canonical": "a - b",
+    "answer": "a-b",
+    "correct": true,
+    "timestamp": 1672421699789
   }
 ]
