@@ -30,4 +30,4 @@ const lineOfCircles = (r) => {
   for (let x = gap + r; x < (width - gap); x += 2 * r)
     drawFilledCircle(x, height / 2, r, 'red')
 }
-lineOfCircles(8)
+lineOfCircles(44)
