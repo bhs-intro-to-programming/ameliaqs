@@ -23,11 +23,22 @@
  *
  *  clear()
  */
-const lineOfCircles = (r) => {
+const XlineOfCircles = (r) => {
   const numCircles = Math.floor(width / (2 * r));
   const totalWidth = numCircles * 2 * r;
   const gap = (width - totalWidth) / 2;
   for (let x = gap + r; x <= (width - gap) - r; x += 2 * r)
     drawFilledCircle(x, height / 2, r, 'red')
 }
+
+const lineOfCircles = (r) => {
+  const numCircles = Math.floor(width / (2 * r));
+  const totalWidth = numCircles * 2 * r;
+  const gap = (width - totalWidth) / 2;
+  for (let i = 0; i < numCircles; i++) {
+    drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'red')
+  }
+}
+
+
 lineOfCircles(44)
