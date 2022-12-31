@@ -23,7 +23,8 @@
  *
  *  clear()
  */
-const lineOfCircles = (r) => {
-  drawFilledCircle(10, height/2, r, 'red')
+const lineOfCircles = (x) => {
+  while (r<{
+  drawFilledCircle(x, height/2, 10, 'red')
 }
 lineOfCircles(10)
