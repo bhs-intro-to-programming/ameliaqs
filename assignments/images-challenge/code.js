@@ -48,7 +48,6 @@ const alternatingCircles = (r) => {
     const gap = (width - totalWidth) / 2;
     for (let i = 0; i < numCircles; i++) {
       drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'blue')
-  const redCircles
     const numCircles = Math.floor(width / (2 * r));
     const numBlueCircles = Math.floor(width / (2 * r)) / 2;
     const totalWidth = numCircles * 2 * r;
