@@ -27,4 +27,4 @@ const lineOfCircles = (x) => {
 
   drawFilledCircle(x, height/2, 10, 'red')
 }
-lineOfCircles(100)
+lineOfCircles(10)
