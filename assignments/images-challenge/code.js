@@ -24,7 +24,7 @@
  *  clear()
  */
 const lineOfCircles = (r) => {
-  for (let x = 3 * r; x < width-r; x += 2 * r)
+  for (let x = r; x < width-r; x += 2 * r)
   drawFilledCircle(x, height/2, r, 'red')
 }
 lineOfCircles(44)
