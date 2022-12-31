@@ -42,7 +42,6 @@ const lineOfCircles = (r) => {
 // lineOfCircles(44)
 
 const alternatingCircles = (r) => {
-  const blueCircles
     const numCircles = Math.floor(width / (2 * r));
     const numBlueCircles = 1 + Math.floor(width / (2 * r)) / 2;
     const totalWidth = numCircles * 2 * r;
