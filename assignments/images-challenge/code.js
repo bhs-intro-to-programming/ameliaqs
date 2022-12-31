@@ -24,7 +24,7 @@
  *  clear()
  */
 const lineOfCircles = (r) => {
-  for (let x = (width - 2 * r * Math.floor(width/2 * r)) / 2; x < 2 * r * Math.floor(width/2 * r)) / 2); x += 2 * r)
+  for (let x = (width - 2 * r * Math.floor(width/2 * r)) / 2; x < 2 * r * Math.floor(width/2 * r) / 2); x += 2 * r)
   drawFilledCircle(x, height/2, r, 'red')
 }
 lineOfCircles(40)
