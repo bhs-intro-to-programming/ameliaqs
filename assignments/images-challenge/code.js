@@ -50,7 +50,7 @@ const alternatingCircles = (r) => {
   for (let i = 0; i < numCircles; i++) {
     drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'blue')
   }
-  const numBlueCircles = Math.floor(width / (2 * r)) / 2;
+  const numRedCircles = Math.floor(width / (2 * r)) / 2;
   for (let i = 0; i < numCircles; i++) {
     drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'red')
   }
