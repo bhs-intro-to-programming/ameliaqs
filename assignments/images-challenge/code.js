@@ -24,12 +24,5 @@
  *  clear()
  */
 const lineOfCircles = (r) => {
-for (let x = r; x < width; x + r) {
-  drawFilledCircle(x, height/2, x, 'red')
-}}
-
-let x = 10;
-while (x < 100) {
-  drawFilledCircle(x, height/2, x, 'red');
-  x++;
+  drawFilledCircle(10, y, r, 'red')
 }
