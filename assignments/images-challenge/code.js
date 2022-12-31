@@ -42,11 +42,11 @@ const lineOfCircles = (r) => {
 // lineOfCircles(44)
 
 const alternatingCircles = (r) => {
-  const numCircles = Math.floor(width / (2 * r));
+  const numBlueCircles = 0.5 * Math.floor(width / (2 * r));
   const totalWidth = numCircles * 2 * r;
   const gap = (width - totalWidth) / 2;
   for (let i = 0; i < numCircles; i++) {
-    drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'red')
+    drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'blue')
   }
 }
 alternatingCircles(44)
