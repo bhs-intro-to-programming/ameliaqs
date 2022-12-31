@@ -39,6 +39,4 @@ const lineOfCircles = (r) => {
     drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'red')
   }
 }
-
-
-lineOfCircles(44)
+// lineOfCircles(44)
