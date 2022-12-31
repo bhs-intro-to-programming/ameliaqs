@@ -24,7 +24,7 @@
  *  clear()
  */
 const lineOfCircles = (x) => {
-  while (r<{
+
   drawFilledCircle(x, height/2, 10, 'red')
 }
 lineOfCircles(10)
