@@ -28,4 +28,3 @@ const lineOfCircles = (r) => {
   drawFilledCircle(x, height/2, r, 'red')
 }
 lineOfCircles(44)
-(width - Math.floor(width / (2 * r)) * 2 * r) / 2
