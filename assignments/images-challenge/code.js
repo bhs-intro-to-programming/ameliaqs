@@ -97,4 +97,5 @@ const checkerboard = (n) => {
 
 
 }}}
+}
 checkerboard(5)
