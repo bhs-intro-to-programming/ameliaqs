@@ -168,4 +168,4 @@ const squareOfCircles = (s) => {
     }
   }
 }
-squareOfCircles(10)
+squareOfCircles(17)
