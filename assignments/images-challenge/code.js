@@ -115,8 +115,8 @@ const notReallyCurved = (n) => {
 
 const fillWithCircles = (s) => {
   const d = 2 * s
-  const numColumns = width / d
-  const numRows = height / d
+  const numColumns = Math.floor(width / d)
+  const numRows = Math.floor(height / d)
   for (let r = 0; r < numRows; r++)
   for (let c = 0; c < numColumns; c++) {
     drawCircle(s + c * d, s + r * d, s, 'blue', 1)
