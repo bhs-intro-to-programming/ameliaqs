@@ -118,9 +118,10 @@ const fillWithCircles = (s) => {
   const numColumns = Math.floor(width / d)
   const numRows = Math.floor(height / d)
   const left = (width - numColumns * s) / 2
+  const top = (height - numRows * s) / 2
   for (let r = 0; r < numRows; r++)
   for (let c = 0; c < numColumns; c++) {
-    drawCircle(s + c * d, s + r * d, s, 'blue', 1)
+    drawCircle(left + c * d, top + r * d, s, 'blue', 1)
   }
 }
 fillWithCircles(10)
