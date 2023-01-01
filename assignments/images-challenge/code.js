@@ -142,4 +142,4 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
       }
     }
 }
-fillWithCirlcesRandomlyFilled(10, 0.23)
+fillWithCirlcesRandomlyFilled(100, 0.23)
