@@ -75,14 +75,16 @@ const concentricCircles = (n) => {
 
 const checkerboard = (n) => {
 
-  const side = height / n;
-  const boardWidth = side * n
-  const gap = (width - boardWidth) / 2
-  for (let c = 0; c < n; c++) {
-    if ((c % 2) === 0) {
-      drawFilledRect(gap + side * c, 0, side, side, 'blue')
-    } else {
-      drawFilledRect(gap + side * c, 0, side, side, 'red')
+  for (let r = 0; r < n; r++) {
+    const side = height / n;
+    const boardWidth = side * n
+    const gap = (width - boardWidth) / 2
+    for (let c = 0; c < n; c++) {
+      if ((c % 2) === 0) {
+        drawFilledRect(gap + side * c, 0, side, side, 'blue')
+      } else {
+        drawFilledRect(gap + side * c, 0, side, side, 'red')
+      }
     }
   }
 }
