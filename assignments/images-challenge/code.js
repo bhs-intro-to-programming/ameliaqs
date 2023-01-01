@@ -60,7 +60,7 @@ const alternatingCircles = (r) => {
 
 const concentricCircles = (n) => {
 
-  const MaxR = width / 2;
+  const MaxR = height / 2;
   const difference = MaxR / n;
   for (let i = 0; i < n; i++) {
     drawFilledCircle(width / 2, height / 2, MaxR - difference * i, 'blue')
