@@ -48,13 +48,13 @@ const alternatingCircles = (r) => {
   const totalWidth = numCircles * 2 * r;
   const gap = (width - totalWidth) / 2;
   for (let i = 0; i < numCircles; i++) {
-    //if ((i % 2) = 0) {
+    if ((i % 2) = 0) {
       drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'blue');
-    } //else {
-      //drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'red');
+    } else {
+      drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'red');
     }
 
-  //}
-//}
+  }
+}
 
 alternatingCircles(44)
