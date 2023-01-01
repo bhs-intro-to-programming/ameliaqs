@@ -141,4 +141,4 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
       }
     }
 }
-fillWithCirlcesRandomlyFilled(17, 0.0)
+fillWithCirlcesRandomlyFilled(17, 1)
