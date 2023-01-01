@@ -75,7 +75,7 @@ const concentricCircles = (n) => {
 
 const checkerboard = (n) => {
 
-  const side = height / 2;
+  const side = height / n;
   const boardWidth = side * n
   const gap = (width - boardWidth) / 2
   for (let i = 0; i < n; i++) {
