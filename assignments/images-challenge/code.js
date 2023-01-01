@@ -124,7 +124,7 @@ const fillWithCircles = (s) => {
       drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
     }
 }
-fillWithCircles(30)
+// fillWithCircles(30)
 
 const fillWithCirlcesRandomlyFilled = (s, p) => {
   const d = 2 * s
@@ -132,13 +132,14 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
   const numRows = Math.floor(height / d)
   const left = (width - numColumns * d) / 2
   const top = (height - numRows * d) / 2
-  const value = Math.random() - p
+  const x = Math.random() - p
   for (let r = 0; r < numRows; r++)
     for (let c = 0; c < numColumns; c++) {
-      if (value > 0) {
+      if (x > 0) {
         drawFilledCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       } else {
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       }
     }
 }
+fillWithCirlcesRandomlyFilled(17, 0.23)
