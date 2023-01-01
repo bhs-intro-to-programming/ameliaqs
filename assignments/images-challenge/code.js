@@ -102,7 +102,7 @@ const checkerboard = (n) => {
     }
   }
 }
-checkerboard(8)
+// checkerboard(8)
 
 const notReallyCurved = (n) => {
   const difference = width / n
