@@ -72,3 +72,17 @@ const concentricCircles = (n) => {
   }
 }
 concentricCircles(11)
+
+const checkerboard = (n) => {
+
+  const side = height / 2;
+  const boardWidth = side * n
+  const gap = (width - boardWidth) / 2
+  for (let i = 0; i < n; i++) {
+    if ((i % 2) === 0) {
+      drawFilledRect(gap + s * i, 0, side, side, 'blue')
+    } else {
+      drawFilledRect(gap + s * i, 0, side, side, 'red')
+    }
+  }
+}
