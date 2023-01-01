@@ -89,9 +89,9 @@ const checkerboard = (n) => {
     }
     else {for (let c = 0; c < n; c++) {
         if ((c % 2) === 0) {
-          drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'red')
+          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'red')
         } else {
-          drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'blue')
+          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'blue')
 
     }
 
