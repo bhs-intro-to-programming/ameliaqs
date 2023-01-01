@@ -163,7 +163,7 @@ const squareOfCircles = (s) => {
   const top = (height - numCircles * d) / 2
   for (let r = 0; r < numCircles; r++)
     for (let c = 0; c < numCircles; c++) {
-      const gap = r === 0 || r === numCircles - 1 ? c * d : (numCircles - 1) * d;
+      const gap = r === 0 || r === numCircles - 1 ? c * d : (numCircles - 1) * d * c;
       drawCircle(s + left + gap, s + top + r * d, s, 'blue', 1)
     }
 }
