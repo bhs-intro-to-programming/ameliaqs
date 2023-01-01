@@ -111,7 +111,7 @@ const notReallyCurved = (n) => {
   }
   const YDifference = height / n
   for (let h = 0; h < n; h++) {
-    drawLine(0, 0, width, 0 + h * YDifference, 'black', 1)
+    drawLine(width, height, 0, height - h * YDifference, 'black', 1)
   }
 }
 notReallyCurved(10)
