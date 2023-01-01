@@ -120,8 +120,25 @@ const fillWithCircles = (s) => {
   const left = (width - numColumns * d) / 2
   const top = (height - numRows * d) / 2
   for (let r = 0; r < numRows; r++)
-  for (let c = 0; c < numColumns; c++) {
-    drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
-  }
+    for (let c = 0; c < numColumns; c++) {
+      drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
+    }
 }
 fillWithCircles(30)
+
+const fillWithCirlcesRandomlyFilled = (s, p) => {
+  const d = 2 * s
+  const numColumns = Math.floor(width / d)
+  const numRows = Math.floor(height / d)
+  const left = (width - numColumns * d) / 2
+  const top = (height - numRows * d) / 2
+  const x = Math.random()
+  for (let r = 0; r < numRows; r++)
+    for (let c = 0; c < numColumns; c++) {
+      if (x < p) {
+        drawFilledCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
+      } else {
+        drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
+      }
+    }
+}
