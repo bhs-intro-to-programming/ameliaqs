@@ -81,18 +81,13 @@ const checkerboard = (n) => {
         }
       }
     }
-    //else {
+    else {
       for (let c = 0; c < n; c++) {
-        if ((c % 2) === 0) {
-          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'red')
-        } else {
-          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'blue')
+        const color = (i % 2) === 0 ? 'blue' : 'red';
+          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'color')
 
         }
 
 
-      }
     }
-  }
-}
 checkerboard(6)
