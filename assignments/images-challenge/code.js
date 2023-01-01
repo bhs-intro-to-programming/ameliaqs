@@ -82,7 +82,7 @@ const checkerboard = (n) => {
     }
     else {
       for (let c = 0; c < n; c++) {
-        const color = (c % 2) === 0 ? 'blue' : 'red';
+        const color = (c % 2) === 0 ? 'red' : 'blue';
         drawFilledRect(gap + side * c, 0 + side * r, side, side, color)
 
       }
