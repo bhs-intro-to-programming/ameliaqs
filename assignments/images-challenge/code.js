@@ -83,7 +83,7 @@ const checkerboard = (n) => {
       if ((c % 2) === 0) {
         drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'blue')
       } else {
-        drawFilledRect(gap + side * c, 0 + side * r, side, side, 'red')
+        drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'red')
       }
     }
   }
