@@ -135,7 +135,7 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
   const x = Math.random() - p
   for (let r = 0; r < numRows; r++)
     for (let c = 0; c < numColumns; c++) {
-      if (x > 0) {
+      if (Math.random() > p) {
         drawFilledCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       } else {
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
