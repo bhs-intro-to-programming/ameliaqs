@@ -74,19 +74,28 @@ const concentricCircles = (n) => {
 // concentricCircles(11)
 
 const checkerboard = (n) => {
-
+  const side = height / n;
+  const boardWidth = side * n
+  const gap = (width - boardWidth) / 2
   for (let r = 0; r < n; r++) {
-    const side = height / n;
-    const boardWidth = side * n
-    const gap = (width - boardWidth) / 2
-    for (let c = 0; c < n; c++) {
-      if ((c % 2) === 0) {
-        drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'blue')
-      } else {
-        drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'red')
+    if ((r % 2 === 0)) {
+      for (let c = 0; c < n; c++) {
+        if ((c % 2) === 0) {
+          drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'blue')
+        } else {
+          drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'red')
+        }
       }
     }
-  }
-}
+    else {for (let c = 0; c < n; c++) {
+        if ((c % 2) === 0) {
+          drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'red')
+        } else {
+          drawFilledRect(gap + side * c, 0 + 2 * side * r, side, side, 'blue')
+
+    }
+
+
+}}
 checkerboard(5)
 // drawFilledRect(0, 0, 10, 10, 'red')
