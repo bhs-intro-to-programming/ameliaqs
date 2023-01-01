@@ -114,4 +114,4 @@ const notReallyCurved = (n) => {
     drawLine(width, height, 0, height - h * YDifference, 'black', 1)
   }
 }
-notReallyCurved(25)
+notReallyCurved(20)
