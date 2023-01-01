@@ -124,4 +124,4 @@ const fillWithCircles = (s) => {
     drawCircle(left + c * d, top + r * d, s, 'blue', 1)
   }
 }
-fillWithCircles(10)
+fillWithCircles(5)
