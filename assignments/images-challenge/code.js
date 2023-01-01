@@ -96,7 +96,7 @@ const checkerboard = (n) => {
   const gap = (width - boardWidth) / 2
   for (let r = 0; r < n; r++) {
     for (let c = 0; c < n; c++) {
-      const color = ((c * r % 2)) === 0 ? 'blue' : 'red';
+      const color = ((c + r) % 2) === 0 ? 'blue' : 'red';
       drawFilledRect(gap + side * c, 0 + side * r, side, side, color)
     }
   }
