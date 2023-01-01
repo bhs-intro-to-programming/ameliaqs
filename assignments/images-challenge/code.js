@@ -76,14 +76,12 @@ const checkerboard = (n) => {
   for (let r = 0; r < n; r++) {
     if ((r % 2 === 0)) {
       for (let c = 0; c < n; c++) {
-        if ((c % 2) === 0) {
-          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'blue')
-        } else {
-          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'red')
+        const color = (i % 2) === 0 ? 'blue' : 'red';
+          drawFilledRect(gap + side * c, 0 + side * r, side, side, 'color')
         }
       }
     }
-    else {
+    //else {
       for (let c = 0; c < n; c++) {
         if ((c % 2) === 0) {
           drawFilledRect(gap + side * c, 0 + side * r, side, side, 'red')
