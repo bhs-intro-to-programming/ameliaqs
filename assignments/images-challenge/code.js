@@ -119,7 +119,7 @@ const fillWithCircles = (s) => {
   const numRows = height / d
   for (let r = 0; r < numRows; r++)
   for (let c = 0; c < numColumns; c++) {
-    drawCircle(s + c * d, s + r * d, s, 'blue', lineWidth=1)
+    drawCircle(s + c * d, s + r * d, s, 'blue', 1)
   }
 }
 fillWithCircles(5)
