@@ -107,7 +107,7 @@ const checkerboard = (n) => {
 const notReallyCurved = (n) => {
   const difference = width / n
   for (let v = 0; v < n; v++) {
-  drawLine(0, 0, 0 + v * difference, height, 'grey', lineWidth)
+  drawLine(0, 0, 0 + v * difference, height, 'grey', 10)
   }
 }
 notReallyCurved(3)
