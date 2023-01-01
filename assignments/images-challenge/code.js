@@ -71,4 +71,4 @@ const concentricCircles = (n) => {
 
   }
 }
-concentricCircles(15)
+concentricCircles(11)
