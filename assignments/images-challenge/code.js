@@ -80,9 +80,9 @@ const checkerboard = (n) => {
   const gap = (width - boardWidth) / 2
   for (let i = 0; i < n; i++) {
     if ((i % 2) === 0) {
-      drawFilledRect(gap + s * i, 0, side, side, 'blue')
+      drawFilledRect(gap + side * i, 0, side, side, 'blue')
     } else {
-      drawFilledRect(gap + s * i, 0, side, side, 'red')
+      drawFilledRect(gap + side * i, 0, side, side, 'red')
     }
   }
 }
