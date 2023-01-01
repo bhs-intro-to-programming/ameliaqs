@@ -89,8 +89,8 @@ const xcheckerboard = (n) => {
     }
   }
 }
-xcheckerboard(6)
-const acheckerboard = (n) => {
+
+const checkerboard = (n) => {
   const side = height / n;
   const boardWidth = side * n
   const gap = (width - boardWidth) / 2
@@ -101,3 +101,4 @@ const acheckerboard = (n) => {
     }
   }
 }
+checkerboard(6)
