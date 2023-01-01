@@ -54,7 +54,7 @@ const alternatingCircles = (r) => {
       //drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, 'red');
     }
 
-  }
-}
+  //}
+//}
 
 alternatingCircles(44)
