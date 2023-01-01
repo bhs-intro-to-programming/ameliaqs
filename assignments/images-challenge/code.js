@@ -69,7 +69,7 @@ const concentricCircles = (n) => {
 }
 // concentricCircles(11)
 
-// const checkerboard = (n) => {
+const Xcheckerboard = (n) => {
   const side = height / n;
   const boardWidth = side * n
   const gap = (width - boardWidth) / 2
