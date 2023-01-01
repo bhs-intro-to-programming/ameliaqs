@@ -62,7 +62,8 @@ const concentricCircles = (x) => {
 
   const MaxR = width / 2;
   const difference = r / x;
-  for (let i = 0; i < x; i++)
+  for (let i = 0; i < x; i++) {
   drawFilledCircle(width / 2, height / 2, MaxR - difference * i, 'blue')
+  }
 }
 concentricCircles(44)
