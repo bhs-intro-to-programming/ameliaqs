@@ -145,13 +145,24 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
 }
 // fillWithCirlcesRandomlyFilled(17, 0.23)
 
+// const squareOfCircles = (s) => {
+//   const d = 2 * s
+//   const numCircles = Math.min(width, height) / d
+//   const left = (width - numCircles * d) / 2
+//   const top = (height - numCircles * d) / 2
+//   for (let c = 0; c < numCircles; c++) {
+//     drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
+//   }
+// }
+// squareOfCircles(44)
+
 const squareOfCircles = (s) => {
   const d = 2 * s
-  const numCircles = Math.min(width, height) / d
+  const numCircles = Math.floor(height / d)
   const left = (width - numCircles * d) / 2
   const top = (height - numCircles * d) / 2
-  for (let c = 0; c < numCircles; c++) {
-    drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
-  }
+  for (let r = 0; r < numCircles; r++)
+    for (let c = 0; c < numColumns; c++) {
+      drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
+    }
 }
-squareOfCircles(44)
