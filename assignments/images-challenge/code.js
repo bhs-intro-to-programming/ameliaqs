@@ -143,7 +143,7 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
       // }
     }
 }
-fillWithCirlcesRandomlyFilled(17, 0.23)
+// fillWithCirlcesRandomlyFilled(17, 0.23)
 
 const squareOfCircles = (s) => {
   const d = 2 * s
@@ -154,4 +154,4 @@ const squareOfCircles = (s) => {
     drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
   }
 }
-//squareOfCircles(30)
+squareOfCircles(44)
