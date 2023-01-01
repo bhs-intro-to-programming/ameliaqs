@@ -87,5 +87,6 @@ const checkerboard = (n) => {
 
         }
     }
+  }
 }
 checkerboard(6)
