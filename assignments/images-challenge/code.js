@@ -44,15 +44,19 @@ const lineOfCircles = (r) => {
 const alternatingCircles = (r) => {
 
   const numCircles = Math.floor(width / (2 * r));
-  const numBlueCircles = 1 + Math.floor(width / (2 * r)) / 2;
+  //const numBlueCircles = 1 + Math.floor(width / (2 * r)) / 2;
   const totalWidth = numCircles * 2 * r;
   const gap = (width - totalWidth) / 2;
   for (let i = 0; i < numCircles; i++) {
-    drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'blue')
+    if ((i % 2) = 0) {
+      drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'blue');
+    } else { drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'blue') ;
+    }
+    
   }
-  const numRedCircles = Math.floor(width / (2 * r)) / 2;
-  for (let i = 0; i < numCircles; i++) {
-    drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'red')
+  //const numRedCircles = Math.floor(width / (2 * r)) / 2;
+  //for (let i = 0; i < numCircles; i++) {
+    //drawFilledCircle(gap + r + (i * 4 * r), height / 2, r, 'red')
   }
 }
 alternatingCircles(44)
