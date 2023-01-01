@@ -86,4 +86,5 @@ const checkerboard = (n) => {
     }
   }
 }
-checkerboard(5)
+// checkerboard(5)
+drawFilledRect(0, 0, 10, 10, 'red')
