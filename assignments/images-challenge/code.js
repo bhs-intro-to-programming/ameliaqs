@@ -111,4 +111,15 @@ const notReallyCurved = (n) => {
     drawLine(0, 0 + i * difference, 0 + i * difference, frameSide, 'black', 1)
   }
 }
-notReallyCurved(20)
+// notReallyCurved(20)
+
+const fillWithCircles = (s) => {
+  const d = 2 * s
+  const numColumns = width / d
+  const numRows = height / d
+  for (let r = 0; r < numRows; r++)
+  for (let c = 0; c < numColumns; c++) {
+    drawCircle(s + c * d, s + r * d, radius, color, lineWidth=1)
+  }
+}
+filledWithCircles(5)
