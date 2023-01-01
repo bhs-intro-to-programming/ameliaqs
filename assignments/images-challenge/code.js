@@ -52,7 +52,7 @@ const alternatingCircles = (r) => {
     drawFilledCircle(gap + r + (i * 2 * r), height / 2, r, color); 
   }
 }
-alternatingCircles(44)
+// alternatingCircles(44)
 
 const concentricCircles = (n) => {
 
@@ -97,4 +97,4 @@ const checkerboard = (n) => {
     }
   }
 }
-//checkerboard(6)
+checkerboard(6)
