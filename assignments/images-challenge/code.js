@@ -158,7 +158,7 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
 
 const squareOfCircles = (s) => {
   const d = 2 * s
-  const numCircles = height / d
+  const numCircles = Math.min(width, height) / d
   const left = (width - numCircles * d) / 2
   const top = (height - numCircles * d) / 2
   for (let r = 0; r < numCircles; r++) {
@@ -168,4 +168,4 @@ const squareOfCircles = (s) => {
     }
   }
 }
-squareOfCircles(17)
+squareOfCircles(25)
