@@ -102,4 +102,4 @@ const checkerboard = (n) => {
     }
   }
 }
-checkerboard(21)
+checkerboard(8)
