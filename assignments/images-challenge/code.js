@@ -71,7 +71,7 @@ const concentricCircles = (n) => {
 
   }
 }
-concentricCircles(11)
+// concentricCircles(11)
 
 const checkerboard = (n) => {
 
@@ -86,3 +86,4 @@ const checkerboard = (n) => {
     }
   }
 }
+checkerboard(5)
