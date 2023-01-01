@@ -147,7 +147,7 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
 
 const squareOfCircles = (s) => {
   const d = 2 * s
-  const numCircles = Math.min(width, height) / d
+  const numCircles = height / d
   const left = (width - numCircles * d) / 2
   const top = (height - numCircles * d) / 2
   for (let c = 0; c < numCircles; c++) {
