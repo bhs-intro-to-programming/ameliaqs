@@ -131,5 +131,12 @@
     "answer": "(a + b) / 2",
     "correct": true,
     "timestamp": 1672625239607
+  },
+  {
+    "name": "Length of hypotenuse",
+    "canonical": "Math.sqrt(a ** 2 + b ** 2)",
+    "answer": "Math.sqrt(a ** 2 + b ** 2)",
+    "correct": true,
+    "timestamp": 1672625261563
   }
 ]
