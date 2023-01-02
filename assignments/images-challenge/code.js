@@ -184,20 +184,6 @@ const YsquareOfCircles = (s) => {
   }
 }
 
-const ZsquareOfCircles = (s) => {
-  const d = 2 * s
-  const numCircles = Math.min(width, height) / d
-  const left = (width - numCircles * d) / 2
-  const top = (height - numCircles * d) / 2
-  const gap = (numCircles - 1) * d
-  for (let r = 0; r < numCircles; r++)
-    for (let c = 0; c < numCircles; c++) {
-      const x = 0 < r < numCircles - 1 ? s + left + c * gap : s + left + c * d;
-      drawCircle(x, s + top + r * d, s, 'blue', 1);
-    }
-}
-
-
 const squareOfCircles = (s) => {
   const d = 2 * s
   const numCircles = Math.min(width, height) / d
@@ -206,7 +192,7 @@ const squareOfCircles = (s) => {
   const gap = (numCircles - 1) * d
   for (let r = 0; r < numCircles; r++)
     for (let c = 0; c < numCircles; c++) {
-      const x = r === 0 ? s + left + c * d : r === numCircles - 1 ? s + left + c * d : s + left + c * gap;
+      const x = 0 < r < numCircles - 1 ? s + left + c * gap : s + left + c * d;
       drawCircle(x, s + top + r * d, s, 'blue', 1);
     }
 }
