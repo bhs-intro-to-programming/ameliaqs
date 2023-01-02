@@ -171,11 +171,12 @@ const squareOfCircles = (s) => {
         console.log(`Drawing circle for row ${r}`);
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       }
-    } else {
-      for (let c = 0; c < 2; c++) {
-        //drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
-      }
     }
+    //  else {
+    //   for (let c = 0; c < 2; c++) {
+    //     //drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
+    //   }
+    // }
   }
 }
 
