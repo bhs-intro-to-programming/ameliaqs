@@ -171,13 +171,13 @@ const squareOfCircles = (s) => {
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       }
     } else {
-        for (let c = 0; c < 2; c++) {
-          drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
-        }
+      for (let c = 0; c < 2; c++) {
+        drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
       }
     }
   }
 }
+
 
 const ZsquareOfCircles = (s) => {
   const d = 2 * s
