@@ -27,7 +27,7 @@ const countXs = (s) => {
     if (s[i] === x)
       count++
   }
-     return count
+  return count
 }
 const timesTable = (n) => {
   for (i = 1; i <= n; i++) {
