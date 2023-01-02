@@ -157,7 +157,7 @@ const XsquareOfCircles = (s) => {
     }
   }
 }
-squareOfCircles(25)
+
 
 const squareOfCircles = (s) => {
   const d = 2 * s
@@ -175,3 +175,4 @@ const squareOfCircles = (s) => {
     }
   }
 }
+squareOfCircles(25)
