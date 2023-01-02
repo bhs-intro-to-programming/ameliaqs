@@ -166,20 +166,25 @@ const squareOfCircles = (s) => {
   const top = (height - numCircles * d) / 2
   const gap = (numCircles - 1) * d
   for (let r = 0; r < numCircles; r++) {
-    if (r === 0 || r === numCircles - 1) {
+    if (r === 0) {
       for (let c = 0; c < numCircles; c++) {
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       }
     } else {
-      for (let c = 0; c < 2; c++) {
-        drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
+      if (r === numCircles - 1) {
+        for (let c = 0; c < numCircles; c++) {
+          drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
+        }
+      } else {
+        for (let c = 0; c < 2; c++) {
+          drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
+        }
       }
     }
   }
 }
 
-
-const ZsquareOfCircles = (s) => {
+const zsquareOfCircles = (s) => {
   const d = 2 * s
   const numCircles = (Math.min(width, height) / d) - 1;
   const left = (width - numCircles * d) / 2
@@ -187,9 +192,7 @@ const ZsquareOfCircles = (s) => {
   const gap = (numCircles - 1) * d
   for (let r = 0; r < numCircles; r++)
     for (let c = 0; c < numCircles; c++) {
-      const x = r > 0 && r < numCircles - 1
-        ? s + left + c * gap
-        : s + left + c * d;
+      const x = r > 0 && r < numCircles - 1? s + left + c * gap : s + left + c * d;
       drawCircle(x, s + top + r * d, s, 'blue', 1);
     }
 }
