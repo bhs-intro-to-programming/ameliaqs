@@ -175,7 +175,7 @@ const squareOfCircles = (s) => {
       }
     } else {
       for (let c = 0; c < 2; c++) {
-        //drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
+        drawCircle(s + left + c * gap, s + top + r * d, s, 'blue', 1);
       }
     }
   }
