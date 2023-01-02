@@ -131,5 +131,12 @@
     "answer": "s.substring(1, s.length-1)",
     "correct": true,
     "timestamp": 1672625794572
+  },
+  {
+    "name": "Last three",
+    "canonical": "s.substring(s.length - 3)",
+    "answer": "s.substring(s.length-3)",
+    "correct": true,
+    "timestamp": 1672625808095
   }
 ]
