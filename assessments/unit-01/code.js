@@ -41,7 +41,7 @@ const containsX = (s) => {
     if (s[i] === 'x')
       return true
   }
-    return count > 0
+  return false
 }
 const sumSquares = (x) => {
   for (let i = 0; i < x; i++) {
