@@ -196,4 +196,4 @@ const squareOfCircles = (s) => {
      drawCircle(x, s + top + r * d, s, 'blue', 1);
    }
 }
-squareofCircles(25)
+squareOfCircles(25)
