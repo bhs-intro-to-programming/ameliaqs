@@ -165,12 +165,9 @@ const squareOfCircles = (s) => {
   const left = (width - numCircles * d) / 2;
   const top = (height - numCircles * d) / 2;
   const gap = (numCircles - 1) * d;
-  console.log(`Num circles ${numCircles}`);
   for (let r = 0; r < numCircles; r++) {
-    console.log(`In row ${r}`);
-    if ((r === 0) || (r === (numCircles - 1))) {
+    if (r === 0 || r === numCircles - 1) {
       for (let c = 0; c < numCircles; c++) {
-        console.log(`Drawing circle for row ${r}`);
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       }
     } else {
