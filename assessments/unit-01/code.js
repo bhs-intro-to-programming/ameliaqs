@@ -23,29 +23,29 @@ const upDownLastCharacter = (s) => s.substring(length - 1).toUpperCase + s.subst
 const yesIfEven = (x) => { x % 2 === 0 ? 'yes' : 'no' }
 const countXs = (s) => {
   let count = 0
-  for (i = 0, i < length, i++) {
+  for (i = 0; i < length; i++) {
     if (s[i] === x)
       count++
-    return count
   }
+     return count
 }
 const timesTable = (n) => {
-  for (i = 1, i <= n, i++) {
-    for (j = 1, j <= n, j++) {
+  for (i = 1; i <= n; i++) {
+    for (j = 1; j <= n; j++) {
       emit = (i, j, (i * j))
     }
   }
 }
 const containsX = (s) => {
   let count = 0
-  for (i = 0, i < length, i++) {
+  for (i = 0; i < length; i++) {
     if (s[i] === x)
       count++
     return count > 0
   }
 }
 const sumSquares = (x) => {
-  for (i = 0, i < x, i++) {
+  for (i = 0; i < x; i++) {
     x + Math.floor(x - i) ** 2
   }
 }
