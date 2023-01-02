@@ -164,7 +164,7 @@ const squareOfCircles = (s) => {
   const numCircles = Math.min(width, height) / d
   const left = (width - numCircles * d) / 2
   const top = (height - numCircles * d) / 2
-  const gap = (numCircles - 1) * d * c
+  const gap = (numCircles - 1) * d
   for (let r = 0; r < numCircles; r++) {
     if (r === 0) {
       for (let c = 0; c < numCircles; c++) {
@@ -172,7 +172,7 @@ const squareOfCircles = (s) => {
       }
     } else {
       for (let c = 0; c <= 2; c++) {
-        drawCircle(s + left + gap, s + top + r * d, s, 'blue', 1)
+        drawCircle(s + left + gap * c, s + top + r * d, s, 'blue', 1)
       }
     }
   }
