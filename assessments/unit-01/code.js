@@ -39,10 +39,10 @@ const timesTable = (n) => {
 const containsX = (s) => {
   let count = 0
   for (let i = 0; i < length; i++) {
-    if (s[i] === x)
+    if (s[i] === 'x')
       count++
-    return count > 0
   }
+    return count > 0
 }
 const sumSquares = (x) => {
   for (let i = 0; i < x; i++) {
