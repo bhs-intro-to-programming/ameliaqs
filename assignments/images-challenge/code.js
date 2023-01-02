@@ -168,6 +168,7 @@ const squareOfCircles = (s) => {
   for (let r = 0; r < numCircles; r++) {
     if ((r === 0) || (r === (numCircles - 1))) {
       for (let c = 0; c < numCircles; c++) {
+        console.log(`Drawing circle for row ${r}`);
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
       }
     } else {
