@@ -19,5 +19,12 @@
     "answer": "s**2",
     "correct": true,
     "timestamp": 1672625000504
+  },
+  {
+    "name": "Area of a rectangle",
+    "canonical": "w*h",
+    "answer": "w * j",
+    "correct": false,
+    "timestamp": 1672625004587
   }
 ]
