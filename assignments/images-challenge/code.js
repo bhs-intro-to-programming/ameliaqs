@@ -145,18 +145,7 @@ const fillWithCirlcesRandomlyFilled = (s, p) => {
 }
 // fillWithCirlcesRandomlyFilled(17, 0.23)
 
-// const squareOfCircles = (s) => {
-//   const d = 2 * s
-//   const numCircles = Math.min(width, height) / d
-//   const left = (width - numCircles * d) / 2
-//   const top = (height - numCircles * d) / 2
-//   for (let c = 0; c < numCircles; c++) {
-//     drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
-//   }
-// }
-// squareOfCircles(44)
-
-const squareOfCircles = (s) => {
+const XsquareOfCircles = (s) => {
   const d = 2 * s
   const numCircles = Math.min(width, height) / d
   const left = (width - numCircles * d) / 2
@@ -169,3 +158,20 @@ const squareOfCircles = (s) => {
   }
 }
 squareOfCircles(25)
+
+const squareOfCircles = (s) => {
+  const d = 2 * s
+  const numCircles = Math.min(width, height) / d
+  const left = (width - numCircles * d) / 2
+  const top = (height - numCircles * d) / 2
+  for (let r = 0; r < numCircles; r++) {
+    if (r === 0 || r === numCircles - 1) {
+    for (let c = 0; c < numCircles; c++) {
+      drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1)
+    } else {
+      const gap = (r === 0) || (r === numCircles - 1) ? c * d : (numCircles - 1) * d;
+      drawCircle(s + left + gap, s + top + r * d, s, 'blue', 1)
+    }
+    }
+  }
+}
