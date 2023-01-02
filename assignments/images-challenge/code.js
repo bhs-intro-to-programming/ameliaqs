@@ -160,12 +160,12 @@ const XsquareOfCircles = (s) => {
 
 
 const squareOfCircles = (s) => {
-  const d = 2 * s
-  const numCircles = Math.min(width, height) / d
-  const left = (width - numCircles * d) / 2
-  const top = (height - numCircles * d) / 2
-  const gap = (numCircles - 1) * d
-  for (let r = 0; r < numCircles; r++) {
+  const d = 2 * s;
+  const numCircles = Math.min(width, height) / d;
+  const left = (width - numCircles * d) / 2;
+  const top = (height - numCircles * d) / 2;
+  const gap = (numCircles - 1) * d;
+  for (let r = 0; r < numCircles - 1; r++) {
     if (r === 0 || r === numCircles - 1) {
       for (let c = 0; c < numCircles; c++) {
         drawCircle(s + left + c * d, s + top + r * d, s, 'blue', 1);
