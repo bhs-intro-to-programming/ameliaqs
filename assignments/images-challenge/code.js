@@ -186,8 +186,7 @@ const YsquareOfCircles = (s) => {
 
 const squareOfCircles = (s) => {
   const d = 2 * s
-  const numCircles = Math.min(width, height) / d;
-  numCircles--;
+  const numCircles = (Math.min(width, height) / d) - 1;
   const left = (width - numCircles * d) / 2
   const top = (height - numCircles * d) / 2
   const gap = (numCircles - 1) * d
