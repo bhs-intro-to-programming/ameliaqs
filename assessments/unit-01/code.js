@@ -24,7 +24,7 @@ const yesIfEven = (x) => { x % 2 === 0 ? 'yes' : 'no' }
 const countXs = (s) => {
   let count = 0
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === x)
+    if (s[i] === 'x')
       count++
   }
   return count
