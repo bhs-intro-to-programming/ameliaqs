@@ -183,7 +183,6 @@ const YsquareOfCircles = (s) => {
     }
   }
 }
-YsquareOfCircles(25)
 
 const squareOfCircles = (s) => {
   const d = 2 * s
@@ -197,4 +196,4 @@ const squareOfCircles = (s) => {
      drawCircle(x, s + top + r * d, s, 'blue', 1);
    }
 }
-//squareOfCircles(25)
+squareOfCircles(25)
