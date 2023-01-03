@@ -29,5 +29,5 @@ const anyOverOneHundred = (x) => {
     if (x[i] > 100)
       let answer === 'true'
     }
-  }
   return answer
+}
