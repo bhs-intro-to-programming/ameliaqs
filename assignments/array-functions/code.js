@@ -19,7 +19,13 @@ const evens = (x) => {
   let newArray = []
   for (let i = 0; i < x.length; i++) {
     if (x[i] % 2 === 0)
-    newArray.push(x[i]) 
+      newArray.push(x[i])
   }
   return newArray
+}
+
+const anyOverOneHundred = (x) => {
+  for (let i = 0; i < x.length; i++) {
+    x[i] > 100 ? 'true' : 'false'
+  }
 }
