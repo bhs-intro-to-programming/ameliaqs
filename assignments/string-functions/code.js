@@ -21,3 +21,4 @@ const everyOther = (s) => s[0] + s[2] + s[4]
 const upDownLastCharacter = (s) => upDown(s.substring(s.length - 1))
 const firstName = (s) => s.substring(0, s.indexOf(' '))
 const lastName = (s) => s.substring (s.indexOf(' ') + 1)
+const concatenate (s, t) => s + t
