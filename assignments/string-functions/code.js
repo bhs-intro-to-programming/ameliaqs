@@ -11,5 +11,5 @@ const isAllUpperCase = (s) => {
   return s.toUpperCase() === s
 }
 const sameIgnoringCase = (s, t) => {
-  return s == t
+  return s.toLowerCase() == t.toLowerCase()
 }
