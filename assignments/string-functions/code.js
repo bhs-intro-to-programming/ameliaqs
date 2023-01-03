@@ -29,4 +29,4 @@ const firstThree = (s) => s.substring(0,3)
 const allButFirstAndList = (s) => s.substring (1, s.length - 1)
 const lastThree = (s) => s.substring(s.length - 3)
 const capitalize = (s) => s[0].toUpperCase() + s.substring(1).toLowerCase()
-const capitalizeFirstThree = (s) => s.substring(0, 3).toUpperCase() + s.substring(3).toLowerCase
+const capitalizeFirstThree = (s) => s.substring(0, 3).toUpperCase() + s.substring(3).toLowerCase()
