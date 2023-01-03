@@ -7,4 +7,3 @@ const stringContains = (s, t) => {
 }
 
 const firstAndLast = (s) => s[0] + s[s.length - 1]
-}
