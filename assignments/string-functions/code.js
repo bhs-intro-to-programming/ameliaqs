@@ -15,3 +15,4 @@ const sameIgnoringCase = (s, t) => {
   // Is there a better way to do this?
 }
 const firstHalf = (s) => s.substring(0, Math.floor(s.length / 2))
+const secondHalf = (s) => s.substring(Math.floor(s.length / 2))
