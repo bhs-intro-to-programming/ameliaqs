@@ -26,8 +26,6 @@ const evens = (x) => {
 
 const anyOverOneHundred = (x) => {
   for (let i = 0; i < x.length; i++) {
-    if (x[i] > 100)
-      let answer = 'true'
-    }
-  return answer
+    x[i] > 100 ? 'true' : 'false'
+  }
 }
