@@ -31,3 +31,11 @@ const anyOverOneHundred = (x) => {
   }
   return false
 }
+
+const pyramid = (x) => {
+  newArray = []
+  for (let i = 0; i <= x; i++){
+    newArray.push(x * i)
+  }
+  return newArray
+}
