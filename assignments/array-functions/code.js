@@ -36,7 +36,6 @@ const pyramid = (x) => {
   let newArray = []
   for (let j = 0; j < i; j++) {
     for (let i = 0; i <= x; i++) {
-
       newArray.push(x * i)
     }
   }
