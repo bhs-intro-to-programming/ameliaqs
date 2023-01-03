@@ -12,4 +12,6 @@ const isAllUpperCase = (s) => {
 }
 const sameIgnoringCase = (s, t) => {
   return s.toLowerCase() == t.toLowerCase()
+  // Is there a better way to do this?
 }
+const firstHalf = (s) => s.substring(0, Math.floor(s.length / 2))
