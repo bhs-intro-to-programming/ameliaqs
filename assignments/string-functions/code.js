@@ -10,3 +10,6 @@ const simplePigLatin = (s, n) => s.substring(n) + s.substring(0, n) + 'ay'
 const isAllUpperCase = (s) => {
   return s.toUpperCase() === s
 }
+const sameIgnoringCase = (s, t) => {
+  return s === t
+}
