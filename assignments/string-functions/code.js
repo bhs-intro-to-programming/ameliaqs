@@ -16,4 +16,4 @@ const sameIgnoringCase = (s, t) => {
 }
 const firstHalf = (s) => s.substring(0, Math.floor(s.length / 2))
 const secondHalf = (s) => s.substring(Math.floor(s.length / 2))
-const upDown (s) => s.toUpperCase() + s.toLowerCase()
+const upDown = (s) => s.toUpperCase() + s.toLowerCase()
