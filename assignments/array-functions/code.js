@@ -31,4 +31,3 @@ const anyOverOneHundred = (x) => {
     }
   }
   return answer
-}
