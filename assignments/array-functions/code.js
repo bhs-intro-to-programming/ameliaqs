@@ -33,7 +33,7 @@ const anyOverOneHundred = (x) => {
 }
 
 const pyramid = (x) => {
-  newArray = []
+  let newArray = []
   for (let i = 0; i <= x; i++){
     newArray.push(x * i)
   }
