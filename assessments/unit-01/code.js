@@ -18,9 +18,9 @@ const aFartherThanB = (a, b, c) => Math.abs(a - c) > Math.abs(b - c)
 const firstHalf = (s) => s.substring(0, Math.floor(s.length / 2))
 const secondHalf = (s) => s.substring(Math.floor(s.length / 2))
 const upDown = (s) => s.toUppperCase() + s.toLowerCase()
-const everyOther = (s) => s.substring(0, 1) + s.substring(2, 3) + s.substring(4, 5)
-const upDownLastCharacter = (s) => s.substring(length - 1).toUpperCase + s.substring(length - 1).toLowerCase
-const yesIfEven = (x) => { x % 2 === 0 ? 'yes' : 'no' }
+const everyOther = (s) => s[0] + s[2] + s[4]
+const upDownLastCharacter = (s) => s[s.length - 1].toUpperCase() + s[s.length - 1].toLowerCase()
+const yesIfEven = (x) => x % 2 === 0 ? 'yes' : 'no'
 const countXs = (s) => {
   let count = 0
   for (let i = 0; i < s.length; i++) {
