@@ -22,3 +22,4 @@ const upDownLastCharacter = (s) => upDown(s.substring(s.length - 1))
 const firstName = (s) => s.substring(0, s.indexOf(' '))
 const lastName = (s) => s.substring (s.indexOf(' ') + 1)
 const concatenate = (s, t) => s + t
+const firstCharacter = (s) => s[]
