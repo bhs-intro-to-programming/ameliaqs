@@ -7,3 +7,4 @@ const emptyObject = () => {
   let emptyObject = {}
   return emptyObject
 }
+const distance = (point) => { return point.x}
