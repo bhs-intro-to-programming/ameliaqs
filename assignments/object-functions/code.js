@@ -7,5 +7,7 @@ const emptyObject = () => {
   let emptyObject = {}
   return emptyObject
 }
-const distance = (a, b) => { 
-  return Math.sqrt((b.x - a.x)**2 + (b.y - a.y)**2)}
+const distance = (point1, point2) => {
+  return Math.sqrt((point2.x - point1.x) ** 2 + (point2.y - point1.y) ** 2)
+}
+const midpoint = ()
