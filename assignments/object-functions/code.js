@@ -7,6 +7,3 @@ const emptyObject = () => {
   let emptyObject = {}
   return emptyObject
 }
-//const distance = (l) = {
-  return l.x
-}
