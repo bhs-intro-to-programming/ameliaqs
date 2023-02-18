@@ -25,5 +25,5 @@ const newHighScore = (current, scores) => {
   for (let i = 0; i < scores.length; i++) {
     all.push(scores[0 + i]['score'])
   }
-  return Math.max(all)
+  return all
 }
