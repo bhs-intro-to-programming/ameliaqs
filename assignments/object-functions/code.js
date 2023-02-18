@@ -14,5 +14,5 @@ const midpoint = (point1, point2) => {
   return {'x': (point1.x + point2.x) / 2, 'y': (point1.y + point2.y) / 2}
 }
 const sumSalaries = (array) => {
-  return array[0]['salary']
+  return array['salary']
 }
