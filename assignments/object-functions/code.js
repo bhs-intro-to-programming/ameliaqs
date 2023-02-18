@@ -16,7 +16,7 @@ const midpoint = (point1, point2) => {
 const sumSalaries = (x) => {
   let sum = 0
   for (let i = 0; i < x.length; i++) {
-    sum = sum + x[0 + i]
+    sum = sum + x[0 + i]['salary']
   }
   return sum
 }
