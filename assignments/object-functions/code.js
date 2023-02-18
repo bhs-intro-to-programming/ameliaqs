@@ -20,3 +20,7 @@ const sumSalaries = (x) => {
   }
   return sum
 }
+const newHighScore = (current, all) => {
+  all.push(current)
+  return Math.max(all)
+}
