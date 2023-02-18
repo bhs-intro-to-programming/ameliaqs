@@ -20,7 +20,6 @@ const sumSalaries = (x) => {
   }
   return sum
 }
-const newHighScore = (current, all) => {
-  let new = 0
-  return new
+const newHighScore = (current, scores) => {
+  let all = 0
 }
