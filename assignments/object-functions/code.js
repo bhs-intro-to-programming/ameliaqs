@@ -22,5 +22,8 @@ const sumSalaries = (x) => {
 }
 const newHighScore = (current, scores) => {
   let all = []
+  for (let i = 0; i < x.length; i++) {
+    all = all.push(scores[0 + 1]['score'])
+  }
   return all
 }
