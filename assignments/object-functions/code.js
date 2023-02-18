@@ -23,7 +23,7 @@ const sumSalaries = (x) => {
 const newHighScore = (current, scores) => {
   let all = []
   for (let i = 0; i < scores.length; i++) {
-    all.push(scores[0 + i]['score'])
+    x = all.push(scores[0 + i]['score'])
   }
-  return all
+  return x
 }
