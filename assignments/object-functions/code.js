@@ -36,7 +36,6 @@ const summarizeBooks = (books) => {
     titles[i] = books[i]['title']
     pages = pages + books[i]['pages']
   }
-  let summary = {'titles': titles, 'pages': pages}
+  let summary = { 'titles': titles, 'pages': pages }
   return summary
-
 }
