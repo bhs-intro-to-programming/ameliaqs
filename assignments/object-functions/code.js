@@ -21,5 +21,5 @@ const sumSalaries = (x) => {
   return sum
 }
 const newHighScore = (current, scores) => {
-  Math.max(scores)
+  return Math.max(scores)
 }
