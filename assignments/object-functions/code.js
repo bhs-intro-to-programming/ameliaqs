@@ -21,11 +21,10 @@ const sumSalaries = (x) => {
   return sum
 }
 const newHighScore = (current, scores) => {
-  let x = 0
   let max = scores[0]
   for (let i = 0; i < scores.length; i++) {
-    if (x[i] > max) {
-      max = x[i]
+    if (scores[i]['score'] > max) {
+      max = scores[i]['score']
       return max
     }
   }
