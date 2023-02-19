@@ -24,6 +24,8 @@ const newHighScore = (current, scores) => {
   let x = 0
   for (let i = 0; i < scores.length; i++) {
     x = scores[i]['score']
+    if (x > current)
+      return x 
   }
-  return x
+  return current
 }
