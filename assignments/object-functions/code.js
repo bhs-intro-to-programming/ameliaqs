@@ -34,7 +34,7 @@ const summarizeBooks = (books) => {
   let pages = 0
   for (let i = 0; i < books.length; i++) {
     titles[i] = books[i]['title']
-    pages = pages + books[i][[pages]]
+    pages = pages + books[i][pages]
   }
   let summary = {'titles': titles, 'pages': pages}
   return summary
