@@ -26,7 +26,7 @@ const newHighScore = (current, scores) => {
     if (scores[i]['score'] > max) {
       max = scores[i]['score'];
     } else {
-      max = max;
+      max = scores[0];
     }
   }
   return max
