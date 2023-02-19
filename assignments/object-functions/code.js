@@ -28,5 +28,4 @@ const newHighScore = (current, scores) => {
       return max
     }
   }
-  return current
 }
