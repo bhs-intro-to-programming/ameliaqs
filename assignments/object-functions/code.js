@@ -27,4 +27,5 @@ const newHighScore = (current, scores) => {
       max = scores[i]['score'];
     }
   }
+  return max
 }
