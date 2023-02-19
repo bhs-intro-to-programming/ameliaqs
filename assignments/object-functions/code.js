@@ -35,4 +35,6 @@ const summarizeBooks = (books) => {
     titles[i] = books[i]['title']
   }
   let summary = {'titles': titles}
+  return summary
+
 }
