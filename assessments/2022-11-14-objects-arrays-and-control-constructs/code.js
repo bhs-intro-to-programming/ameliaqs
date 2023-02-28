@@ -22,13 +22,7 @@ const isWinner = (player) => {
   return player.score > 100;
 };
 
-const XupdateWins = (players) => {
-  if (players.score > 100) {
-    let players = { 'score': players.score, 'wins': players.wins + 1 }
-  }
-};
-
-const updateWins = (players) = {
+const updateWins = (players) => {
   for (let i = 0; i < players.length; i++) {
     if (players[i].score > 100)  {
       players[i].wins++
@@ -47,7 +41,7 @@ const bigWinners = (players) => {
 };
 
 const fillTimesTable = (table) => {
-  for (i = 1; i <= table.length; i++) {
+  for (let i = 1; i <= table.length; i++) {
     for (j = 1; j <= table.length; j++) {
       table[i][j] = i * j
     }
@@ -57,7 +51,7 @@ const fillTimesTable = (table) => {
 const sums = (n) => {
   let newArray = []
   let sum = 0
-  for (i = 0; i <= n + 1; i++) {
+  for (let i = 0; i <= n + 1; i++) {
     let sum = sum + i
     newArray.push(sum)
   }
@@ -66,7 +60,7 @@ const sums = (n) => {
 
 const rule110 = (cells) => {
   let newArray = []
-  for (i = 0; i < cells.length; i++) {
+  for (let i = 0; i < cells.length; i++) {
     if (cells[i - 1] = cells[i] = cells[i + 1]) {
       newArray[i] = 0
     } else if ((cells[i - 1] = 1) && (cells[i] = cells[i + 1])) {
