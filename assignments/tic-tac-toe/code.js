@@ -9,4 +9,6 @@ registerOnclick((x, y) => {
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
 
-drawLine(width / 3, 0, width / 3, height, 'black', 1)
+for (let i = 1; i <= 3; i++) {
+  drawLine(i * width / 3, i * width / 3, height, 'black', 1)
+}
