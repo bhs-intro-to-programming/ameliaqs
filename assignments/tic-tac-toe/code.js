@@ -11,5 +11,5 @@
 
 for (let i = 1; i <= 3; i++) {
   drawLine(i * width / 4, 0 , i * width / 4, height, 'black', 1)
-
+  drawLine(0, i * height / 4 , width, i * height / 4, 'black', 1)
 }
