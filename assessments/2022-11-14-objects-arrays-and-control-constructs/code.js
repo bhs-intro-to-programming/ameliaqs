@@ -52,7 +52,7 @@ const sums = (n) => {
   let newArray = []
   let sum = 0
   for (let i = 0; i <= n + 1; i++) {
-    let sum = sum + i
+    sum = sum + i
     newArray.push(sum)
   }
   return newArray
@@ -61,9 +61,9 @@ const sums = (n) => {
 const rule110 = (cells) => {
   let newArray = []
   for (let i = 0; i < cells.length; i++) {
-    if (cells[i - 1] = cells[i] = cells[i + 1]) {
+    if (cells[i - 1] === cells[i] && cells[i] === cells[i + 1]) {
       newArray[i] = 0
-    } else if ((cells[i - 1] = 1) && (cells[i] = cells[i + 1])) {
+    } else if ((cells[i - 1] === 1) && (cells[i] === cells[i + 1])) {
       newArray[i] = 0
     } else {
       newArray[i] = 1
