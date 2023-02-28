@@ -3,33 +3,42 @@
 
 const area = (rect) => { return rect.width * rect.height };
 
-const higherPaid = (e1, e2) => { return Math.max(e1.salary, e2.salary) };
+const higherPaid = (e1, e2) => {
+  if (e1.salary > e2.salary) {
+    return e1
+  }
+  return e2
+};
 
 const isSamePoint = (p1, p2) => {
-  return ? p1.x === p2.x && p1.y === p2.x
+  return p1.x === p2.x && p1.y === p2.y
 };
 
 const totalWithTip = (bill, tipPercentage) => {
-  let newObject = { 'subtotal': bill.subtotal, 'tip': bill.subtotal * tipPercentage, 'total': bill.subtotal + bill.subtotal * tipPercentage }
+  return { 'subtotal': bill.subtotal, 'tip': bill.subtotal * tipPercentage, 'total': bill.subtotal + bill.subtotal * tipPercentage }
 };
 
 const isWinner = (player) => {
-  if (player.score > 100) {
-    return true
-  }
-  return false
+  return player.score > 100;
 };
 
-const updateWins = (players) => {
+const XupdateWins = (players) => {
   if (players.score > 100) {
     let players = { 'score': players.score, 'wins': players.wins + 1 }
   }
-  return undefined
+};
+
+const updateWins = (players) = {
+  for (let i = 0; i < players.length; i++) {
+    if (players[i].score > 100)  {
+      players[i].wins++
+    }
+  }
 };
 
 const bigWinners = (players) => {
   let newArray = []
-  for (i = 0; i < players.length; i++) {
+  for (let i = 0; i < players.length; i++) {
     if (players[i].wins > 10) {
       newArray.push(players[i])
     }
@@ -43,7 +52,6 @@ const fillTimesTable = (table) => {
       table[i][j] = i * j
     }
   }
-  return undefined
 };
 
 const sums = (n) => {
