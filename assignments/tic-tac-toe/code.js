@@ -14,19 +14,15 @@ for (let i = 1; i <= 3; i++) {
   drawLine(0, i * height / 3, width, i * height / 3, 'black', 1)
 }
 
+
+
 let i = 0
 registerOnclick((x, y) => {
-  if (i % 2 == 0) {
-    if (x < (width / 3)) {
-    drawText('X', width / 6, y, 'black', Math.min(width, height) * 0.3);
-    } else if ((width / 3) < x < (2 * width / 3)) {
-      drawText('X', width / 2, y, 'black', Math.min(width, height) * 0.3);
-    } else (x > (2 * width / 3)); {
-      drawText('X', 5 * width / 6, y, 'black', Math.min(width, height) * 0.3);
-    }
-    i++
+  let c = Math.floor( x / (width / 3))
+  let xx = c * (width / 3) + (width / 6)
+  if (x % 2 == 0) {
+    drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
   } else {
-    drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
-    i++
+    drawText('0', x, y, 'black', Math.min(width, height) * 0.3);
   }
 });
