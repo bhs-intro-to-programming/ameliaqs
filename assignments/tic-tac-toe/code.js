@@ -17,12 +17,13 @@ for (let i = 1; i <= 3; i++) {
 let i = 0
 registerOnclick((x, y) => {
   if (i % 1 == 0) {
-    if (0 < x < (width / 3)) {
+    if (x < (width / 3)) {
     drawText('X', width / 6, y, 'black', Math.min(width, height) * 0.3);
     } else if ((width / 3) < x < (2 * width / 3)) {
       drawText('X', width / 2, y, 'black', Math.min(width, height) * 0.3);
-    } else ((2 * width / 3) < x < width)
+    } else ((2 * width / 3) < x < width) {
       drawText('X', 5 * width / 6, y, 'black', Math.min(width, height) * 0.3);
+    }
     i++
   } else {
     drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
