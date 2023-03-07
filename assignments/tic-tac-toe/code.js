@@ -22,7 +22,9 @@ registerOnclick((x, y) => {
   let xx = c * (width / 3) + (width / 6)
   if (x % 2 == 0) {
     drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+    i++
   } else {
     drawText('0', x, y, 'black', Math.min(width, height) * 0.3);
+    i++
   }
 });
