@@ -22,7 +22,7 @@ let i = 0
 
 registerOnclick((x, y) => {
 let c = Math.floor(x / (width / 3))
-let xx = c * (width / 3) + (width / 6) - (width / 22)
+let xx = c * (width / 3) + (width / 6) - (width / 25)
 let r = Math.floor(y / (height / 3))
 let yy = r * (height / 3) + (height / 6) + height / 10
   if (i % 2 == 0) {
