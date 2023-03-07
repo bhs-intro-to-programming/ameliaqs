@@ -24,7 +24,7 @@ registerOnclick((x, y) => {
 let c = Math.floor(x / (width / 3))
 let xx = c * (width / 3) + (width / 6) - (width / 20)
 let r = Math.floor(y / (height / 3))
-let yy = r * (height / 3) + (height / 6)
+let yy = r * (height / 3) + (height / 6) + height / 20
   if (i % 2 == 0) {
     drawText('X', xx, yy, 'black', Math.min(width, height) * 0.3);
     i++
