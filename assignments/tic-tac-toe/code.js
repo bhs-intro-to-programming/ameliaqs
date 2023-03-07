@@ -21,8 +21,10 @@ registerOnclick((x, y) => {
 
 
 
-let i = 0
-if ((i % 2) === 0) {
+
+
+  for (let i = 1; i <= 9; i++) {
+  if ((i % 2) === 0) {
     registerOnclick((x, y) => {
       drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
     });
@@ -33,3 +35,4 @@ if ((i % 2) === 0) {
     });
     i++
   }
+}
