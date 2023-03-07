@@ -10,23 +10,25 @@
 //});
 
 for (let i = 1; i <= 3; i++) {
-  drawLine(i * width / 3, 0 , i * width / 3, height, 'black', 1)
+  drawLine(i * width / 3, 0, i * width / 3, height, 'black', 1)
   drawLine(0, i * height / 3, width, i * height / 3, 'black', 1)
 }
 
 
 registerOnclick((x, y) => {
- drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
 
 for (let i = 1; i <= 9; i++) {
   if ((i % 2) = 0) {
     registerOnclick((x, y) => {
- drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
-});
+      drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+    });
+    i++
   } else {
     registerOnclick((x, y) => {
- drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
-});
+      drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
+    });
+    i++
   }
 }
