@@ -20,17 +20,15 @@ registerOnclick((x, y) => {
 });
 
 
-
-
-
-  for (let i = 2; i <= 9; i++) {
-  if ((i % 2) === 0) {
+let i = 0
+if ((i % 2) === 0) {
     registerOnclick((x, y) => {
       drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
     });
+    let i = i + 1
   } else {
     registerOnclick((x, y) => {
       drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
     });
+    let i = i + 1
   }
-}
