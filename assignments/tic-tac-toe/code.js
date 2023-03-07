@@ -32,3 +32,16 @@ for (let i = 1; i <= 9; i++) {
     i++
   }
 }
+
+let i = 1
+if ((i % 2) = 0) {
+    registerOnclick((x, y) => {
+      drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+    });
+    i++
+  } else {
+    registerOnclick((x, y) => {
+      drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
+    });
+    i++
+  }
