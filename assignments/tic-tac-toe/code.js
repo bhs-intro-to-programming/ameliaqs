@@ -18,7 +18,7 @@ for (let i = 1; i <= 3; i++) {
 
 let i = 0
 registerOnclick((x, y) => {
-  let c = Math.floor( x / (width / 3))
+  let c = Math.floor(x / (width / 3))
   let xx = c * (width / 3) + (width / 6)
   if (x % 2 == 0) {
     drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
@@ -28,3 +28,14 @@ registerOnclick((x, y) => {
     i++
   }
 });
+
+let i = 0
+registerOnclick((x, y) => {
+  if (i % 2 == 0) {
+  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+i++
+} else {
+  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+  i++
+}});
+
