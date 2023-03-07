@@ -17,11 +17,10 @@ for (let i = 1; i <= 3; i++) {
 let i = 0
 registerOnclick((x, y) => {
   if (i % 2 == 0) {
-  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
-  i++
+    drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+    i++
   } else {
     drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
     i++
   }
-  
 });
