@@ -14,6 +14,19 @@ for (let i = 1; i <= 3; i++) {
   drawLine(0, i * height / 3, width, i * height / 3, 'black', 1)
 }
 
+
 registerOnclick((x, y) => {
  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 });
+
+for (let i = 1; i <= 9; i++) {
+  if ((i % 2) = 0) {
+    registerOnclick((x, y) => {
+ drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+});
+  } else {
+    registerOnclick((x, y) => {
+ drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
+});
+  }
+}
