@@ -24,7 +24,7 @@ registerOnclick((x, y) => {
   drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
 i++
 } else {
-  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
+  drawText('0', x, y, 'black', Math.min(width, height) * 0.3);
   i++
 }});
 
