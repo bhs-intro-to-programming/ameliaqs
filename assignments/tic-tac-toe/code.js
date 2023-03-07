@@ -14,21 +14,12 @@ for (let i = 1; i <= 3; i++) {
   drawLine(0, i * height / 3, width, i * height / 3, 'black', 1)
 }
 
-
-registerOnclick((x, y) => {
-  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
-});
-
-
 let i = 0
-if ((i % 2) === 0) {
-    registerOnclick((x, y) => {
-      drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
-    });
-    let i = i + 1
+registerOnclick((x, y) => {
+  if (i % 2 == 0) {
+  drawText('X', x, y, 'black', Math.min(width, height) * 0.3);
   } else {
-    registerOnclick((x, y) => {
-      drawText('O', x, y, 'black', Math.min(width, height) * 0.3);
-    });
-    let i = i + 1
+    drawText('0', x, y, 'black', Math.min(width, height) * 0.3);
   }
+  
+});
