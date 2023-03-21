@@ -39,10 +39,10 @@ registerOnclick((x, y) => {
     drawText(marker, xx, yy, 'black', Math.min(width, height) * 0.3);
     board[r][c] = marker
     if (rowWinner(r)) {
-      console.log(r)
+      console.log('row ' + r)
     }
     if (columnWinner(c)) {
-      console.log(c)
+      console.log('col ' + c)
     }
     i++
   }
