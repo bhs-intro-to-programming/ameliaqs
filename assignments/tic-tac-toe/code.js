@@ -26,9 +26,11 @@ registerOnclick((x, y) => {
   let xx = c * (width / 3) + (width / 6) - (width / 25)
   let r = Math.floor(y / (height / 3))
   let yy = r * (height / 3) + (height / 6) + (height / 10)
-  let marker = i % 2 == 0 ? 'X' : 'O'
+  let marker = i % 2 === 0 ? 'X' : 'O'
 
+if (board[r][c] === "") {
   drawText(marker, xx, yy, 'black', Math.min(width, height) * 0.3);
   board[r][c] = marker
   i++
+}
 });
