@@ -26,11 +26,11 @@ const rowWinner = (r) => {
 const columnWinner = (c) => {
   return board[0][c] === board[1][c] && board[0][c] === board[2][c]
 }
- const diagonalWinnerA = (r) => {
-  return board[0][0] === board [1][1] && board[0][0] === board [2][2]
+const diagonalWinnerA = (r) => {
+  return board[0][0] === board[1][1] && board[0][0] === board[2][2]
 }
 const diagonalWinnerB = (r) => {
-  return board[0][2] === board [1][1] && board[0][2] === board [2][0]
+  return board[0][2] === board[1][1] && board[0][2] === board[2][0]
 }
 
 let i = 0
@@ -52,15 +52,16 @@ registerOnclick((x, y) => {
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
-      drawLine(xLine, (height / 12), xLine , 11 * (height / 12), 'black', 1)
+      drawLine(xLine, (height / 12), xLine, 11 * (height / 12), 'black', 1)
     }
-    if (diagonalWinnerA(r)){
+    if (diagonalWinnerA(r)) {
       console.log('diagonalA ')
-      drawLine((width / 12), (height / 12), 11 * (width / 12) , 11 * (height / 12), 'black', 1)
+      drawLine((width / 12), (height / 12), 11 * (width / 12), 11 * (height / 12), 'black', 1)
     }
-    if (diagonalWinnerB(r)){
+    if (diagonalWinnerB(r)) {
       console.log('diagonalB ')
-      drawLine(11* (width / 12), (height / 12), (width / 12) , 11 * (height / 12), 'black', 1)
-    i++
+      drawLine(11 * (width / 12), (height / 12), (width / 12), 11 * (height / 12), 'black', 1)
+      i++
+    }
   }
 });
