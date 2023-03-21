@@ -19,6 +19,7 @@ const board = [
   ["", "", ""],
   ["", "", ""]
 ];
+let winner = []
 
 const rowWinner = (r) => {
   return board[r][0] === board[r][1] && board[r][0] === board[r][2]
@@ -49,6 +50,7 @@ registerOnclick((x, y) => {
     if (rowWinner(r)) {
       console.log('row ' + r)
       drawLine((width / 12), yLine, 11 * (width / 12), yLine, 'black', 1)
+      winner = [y]
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
@@ -63,5 +65,8 @@ registerOnclick((x, y) => {
       drawLine(11 * (width / 12), (height / 12), (width / 12), 11 * (height / 12), 'black', 1)
     }
     i++
+  }
+  if (winner[0] = y) {
+    console.log('draw')
   }
 });
