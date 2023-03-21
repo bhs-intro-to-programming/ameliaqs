@@ -21,7 +21,7 @@ const board = [
 ];
 
 const rowWinner = (r) => {
-  return board[r][0] === board[r][r] && board[r][0] === board[r][2]
+  return board[r][0] === board[r][1] && board[r][0] === board[r][2]
 }
 const columnWinner = (c) => {
   return board[0][c] === board[1][c] && board[0][c] === board[2][c]
