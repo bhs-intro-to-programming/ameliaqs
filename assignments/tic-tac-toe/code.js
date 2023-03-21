@@ -42,7 +42,7 @@ registerOnclick((x, y) => {
     board[r][c] = marker
     if (rowWinner(r)) {
       console.log('row ' + r)
-      drawLine((width / 12), yLine, 11 * (width / 12), yLine, 'black', 1)
+      drawLine((width / 12), yLine, 11 * (width / 12), yLine, 'red', 1)
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
