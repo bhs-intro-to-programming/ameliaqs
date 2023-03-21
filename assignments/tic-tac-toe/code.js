@@ -23,6 +23,9 @@ const board = [
 const rowWinner = (r) => {
   return board[r][0] === board[r][r] && board[r][0] === board[r][2]
 }
+const columnWinner = (c) => {
+  return board[0][c] === board[1][c] && board[0][c] === board[2][c]
+}
 
 let i = 0
 registerOnclick((x, y) => {
@@ -37,6 +40,9 @@ registerOnclick((x, y) => {
     board[r][c] = marker
     if (rowWinner(r)) {
       console.log(r)
+    }
+    if (columnWinner(c)) {
+      console.log(c)
     }
     i++
   }
