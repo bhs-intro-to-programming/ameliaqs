@@ -30,7 +30,7 @@ const diagonalWinnerA = (r, c) => {
   return board[r][c]!== "" && board[0][0] === board[1][1] && board[0][0] === board[2][2]
 }
 const diagonalWinnerB = (r) => {
-  return board[2][0] === board[1][1] && board[2][0] === board[0][2]
+  return board[r][c]!== "" && board[2][0] === board[1][1] && board[2][0] === board[0][2]
 }
 
 let i = 0
