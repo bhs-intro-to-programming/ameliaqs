@@ -14,18 +14,21 @@ for (let i = 1; i <= 3; i++) {
   drawLine(0, i * height / 3, width, i * height / 3, 'black', 1)
 }
 
+const board = [
+  ["", "", ""],
+  ["", "", ""],
+  ["", "", ""]
+];
+
 let i = 0
 registerOnclick((x, y) => {
-let c = Math.floor(x / (width / 3))
-let xx = c * (width / 3) + (width / 6) - (width / 25)
-let r = Math.floor(y / (height / 3))
-let yy = r * (height / 3) + (height / 6) + (height / 10)
-  if (i % 2 == 0) {
-    drawText('X', xx, yy, 'black', Math.min(width, height) * 0.3);
-    i++
-  } else {
-    drawText('O', xx, yy, 'black', Math.min(width, height) * 0.3);
-    i++
-  }
-});
+  let c = Math.floor(x / (width / 3))
+  let xx = c * (width / 3) + (width / 6) - (width / 25)
+  let r = Math.floor(y / (height / 3))
+  let yy = r * (height / 3) + (height / 6) + (height / 10)
+  let marker = i % 2 == 0 ? 'X' : 'O'
 
+  drawText(marker, xx, yy, 'black', Math.min(width, height) * 0.3);
+  board[r][c] = marker
+  i++
+});
