@@ -30,17 +30,18 @@ const columnWinner = (c) => {
 let i = 0
 registerOnclick((x, y) => {
   let c = Math.floor(x / (width / 3))
-  let xx = c * (width / 3) + (width / 6) - (width / 25)
+  let xMarker = c * (width / 3) + (width / 6) - (width / 25)
   let r = Math.floor(y / (height / 3))
-  let yy = r * (height / 3) + (height / 6) + (height / 10)
+  let yMarker = r * (height / 3) + (height / 6) + (height / 10)
+  let yy = r * (height / 3) + (height / 6)
   let marker = i % 2 === 0 ? 'X' : 'O'
 
   if (board[r][c] === "") {
-    drawText(marker, xx, yy, 'black', Math.min(width, height) * 0.3);
+    drawText(marker, xMarker, yMarker, 'black', Math.min(width, height) * 0.3);
     board[r][c] = marker
     if (rowWinner(r)) {
       console.log('row ' + r)
-      drawLine((width / 6), r * (height / 3) + (height / 6), 5 * (width / 6), r * (height / 3) + (height / 6), 'black', 1)
+      drawLine((width / 6), yy, 5 * (width / 6), yy, 'black', 1)
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
