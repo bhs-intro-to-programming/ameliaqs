@@ -20,6 +20,10 @@ const board = [
   ["", "", ""]
 ];
 
+const rowWinner = (r) => {
+  return board[r][0] === board[r][r] && board[r][0] === board[r][2]
+}
+
 let i = 0
 registerOnclick((x, y) => {
   let c = Math.floor(x / (width / 3))
@@ -28,9 +32,12 @@ registerOnclick((x, y) => {
   let yy = r * (height / 3) + (height / 6) + (height / 10)
   let marker = i % 2 === 0 ? 'X' : 'O'
 
-if (board[r][c] === "") {
-  drawText(marker, xx, yy, 'black', Math.min(width, height) * 0.3);
-  board[r][c] = marker
-  i++
-}
+  if (board[r][c] === "") {
+    drawText(marker, xx, yy, 'black', Math.min(width, height) * 0.3);
+    board[r][c] = marker
+    if (rowWinner(r)) {
+      console.log(r)
+    }
+    i++
+  }
 });
