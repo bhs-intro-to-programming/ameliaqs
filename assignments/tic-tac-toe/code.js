@@ -29,7 +29,7 @@ const columnWinner = (c) => {
 const diagonalWinnerA = (r, c) => {
   return board[r][c]!== "" && board[0][0] === board[1][1] && board[0][0] === board[2][2]
 }
-const diagonalWinnerB = (r) => {
+const diagonalWinnerB = (r, c) => {
   return board[r][c]!== "" && board[2][0] === board[1][1] && board[2][0] === board[0][2]
 }
 
