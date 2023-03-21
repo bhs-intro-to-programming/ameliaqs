@@ -31,6 +31,7 @@ let i = 0
 registerOnclick((x, y) => {
   let c = Math.floor(x / (width / 3))
   let xMarker = c * (width / 3) + (width / 6) - (width / 25)
+  let xx = c * (width / 3) + (width / 6)
   let r = Math.floor(y / (height / 3))
   let yMarker = r * (height / 3) + (height / 6) + (height / 10)
   let yy = r * (height / 3) + (height / 6)
@@ -45,6 +46,7 @@ registerOnclick((x, y) => {
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
+      drawLine(xx, (height / 12), xx , 11 * (height / 12), 'black', 1)
     }
     i++
   }
