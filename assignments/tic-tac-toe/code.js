@@ -58,6 +58,9 @@ registerOnclick((x, y) => {
       console.log('diagonalA ')
       drawLine((width / 12), (height / 12), 11 * (width / 12) , 11 * (height / 12), 'black', 1)
     }
+    if (diagonalWinnerB(r)){
+      console.log('diagonalB ')
+      drawLine(11* (width / 12), (height / 12), (width / 12) , 11 * (height / 12), 'black', 1)
     i++
   }
 });
