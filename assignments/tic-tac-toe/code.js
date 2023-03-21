@@ -26,8 +26,8 @@ const rowWinner = (r) => {
 const columnWinner = (c) => {
   return board[0][c] === board[1][c] && board[0][c] === board[2][c]
 }
-const diagonalWinnerA = (r) => {
-  return board[0][0] === board[1][1] && board[0][0] === board[2][2]
+const diagonalWinnerA = (r, c) => {
+  return r === c && board[0][0] === board[1][1] && board[0][0] === board[2][2]
 }
 const diagonalWinnerB = (r) => {
   return board[2][0] === board[1][1] && board[2][0] === board[0][2]
@@ -65,3 +65,4 @@ registerOnclick((x, y) => {
     i++
   }
 });
+// issue: finding diagonal winners when diagonals are empty
