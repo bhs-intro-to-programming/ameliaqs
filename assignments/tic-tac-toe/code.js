@@ -69,7 +69,7 @@ registerOnclick((x, y) => {
     turns++
   }
   console.log(turns)
-  if (wins === 1) {
-    console.log('win')
+  if (wins === 0 && turns === 9) {
+    console.log('draw')
   }
 });
