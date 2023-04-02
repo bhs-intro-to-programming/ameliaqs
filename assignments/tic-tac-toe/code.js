@@ -56,14 +56,17 @@ registerOnclick((x, y) => {
     if (columnWinner(c)) {
       console.log('col ' + c)
       drawLine(xLine, (height / 12), xLine, 11 * (height / 12), 'black', 1)
+      wins++
     }
     if (diagonalWinnerA(r)) {
       console.log('diagonalA ')
       drawLine((width / 12), (height / 12), 11 * (width / 12), 11 * (height / 12), 'black', 1)
+      wins++
     }
     if (diagonalWinnerB(r)) {
       console.log('diagonalB')
       drawLine(11 * (width / 12), (height / 12), (width / 12), 11 * (height / 12), 'black', 1)
+      wins++
     }
     i++
     turns++
