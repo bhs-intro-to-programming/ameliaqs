@@ -70,6 +70,6 @@ registerOnclick((x, y) => {
   }
   if (wins === 0 && turns === 9) {
     console.log('draw')
-    drawText('Draw!', width / 3.5, height / 2, 'black', Math.min(width, height) * 0.3)
+    drawText('Draw!', width / 3/8, height / 2, 'black', Math.min(width, height) * 0.3)
   }
 });
