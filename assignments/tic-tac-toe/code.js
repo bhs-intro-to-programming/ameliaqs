@@ -35,6 +35,7 @@ const diagonalWinnerB = (r, c) => {
 
 let i = 0
 let turns = 0
+let wins = 0
 registerOnclick((x, y) => {
   let c = Math.floor(x / (width / 3))
   let xMarker = c * (width / 3) + (width / 6) - (width / 25)
@@ -50,6 +51,7 @@ registerOnclick((x, y) => {
     if (rowWinner(r)) {
       console.log('row ' + r)
       drawLine((width / 12), yLine, 11 * (width / 12), yLine, 'black', 1)
+      wins++
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
@@ -67,4 +69,7 @@ registerOnclick((x, y) => {
     turns++
   }
   console.log(turns)
+  if (wins === 1) {
+    console.log('win')
+  }
 });
