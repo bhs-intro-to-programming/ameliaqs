@@ -50,7 +50,7 @@ registerOnclick((x, y) => {
     if (rowWinner(r)) {
       console.log('row ' + r)
       drawLine((width / 12), yLine, 11 * (width / 12), yLine, 'black', 1)
-      winner = [y]
+      
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
