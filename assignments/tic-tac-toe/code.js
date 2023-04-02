@@ -68,7 +68,6 @@ registerOnclick((x, y) => {
     i++
     turns++
   }
-  console.log(turns)
   if (wins === 0 && turns === 9) {
     console.log('draw')
     drawText('Draw', width / 2, height / 2, 'black', Math.min(width, height) * 0.3)
