@@ -19,7 +19,6 @@ const board = [
   ["", "", ""],
   ["", "", ""]
 ];
-let winner = []
 
 const rowWinner = (r) => {
   return board[r][0] === board[r][1] && board[r][0] === board[r][2]
@@ -35,6 +34,7 @@ const diagonalWinnerB = (r, c) => {
 }
 
 let i = 0
+let turns = 0
 registerOnclick((x, y) => {
   let c = Math.floor(x / (width / 3))
   let xMarker = c * (width / 3) + (width / 6) - (width / 25)
@@ -50,7 +50,6 @@ registerOnclick((x, y) => {
     if (rowWinner(r)) {
       console.log('row ' + r)
       drawLine((width / 12), yLine, 11 * (width / 12), yLine, 'black', 1)
-      
     }
     if (columnWinner(c)) {
       console.log('col ' + c)
@@ -65,8 +64,7 @@ registerOnclick((x, y) => {
       drawLine(11 * (width / 12), (height / 12), (width / 12), 11 * (height / 12), 'black', 1)
     }
     i++
+    turns++
   }
-  if (winner[0] = y) {
-    console.log('draw')
-  }
+  console.log(turns)
 });
