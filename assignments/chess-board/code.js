@@ -29,7 +29,7 @@ for (j = 0; j < 4; j++) {
 }
 for (j = 0; j < 4; j++) {
   for (i = 0; i < 8; i++) {
-    const color = (i % 2) === 0 ? 'pink' : 'green'
+    const color = (i % 2) === 0 ? 'black' : 'beige'
     drawFilledRect(sideGap + (s * i), topGap + (s * 2 * j) + s, s, s, color)
   }
 }
