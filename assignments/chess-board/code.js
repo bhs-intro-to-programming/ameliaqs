@@ -19,17 +19,20 @@ const s = board / 8
 const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
-let i = 0
-let j = 0
-for (j = 0; j < 4; j++) {
-  for (i = 0; i < 8; i++) {
-    const color = (i % 2) === 0 ? 'beige' : 'black'
-    drawFilledRect(sideGap + (s * i), topGap + (s * 2 * j), s, s, color)
-  }
-}
-for (j = 0; j < 4; j++) {
-  for (i = 0; i < 8; i++) {
-    const color = (i % 2) === 0 ? 'black' : 'beige'
-    drawFilledRect(sideGap + (s * i), topGap + (s * 2 * j) + s, s, s, color)
+let c = 0
+let r = 0
+for (r = 0; r < 4; r++) {
+  if ((r % 0 === 0)) {
+    for (c = 0; c < 8; c++) {
+      const color = (c % 2) === 0 ? 'beige' : 'black'
+      drawFilledRect(sideGap + (s * c), topGap + (s * 2 * r), s, s, color)
+    }
+  } else {
+    for (r = 0; r < 4; r++) {
+      for (c = 0; c < 8; c++) {
+        const color = (c % 2) === 0 ? 'black' : 'beige'
+        drawFilledRect(sideGap + (s * c), topGap + (s * 2 * r) + s, s, s, color)
+      }
+    }
   }
 }
