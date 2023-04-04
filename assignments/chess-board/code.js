@@ -19,4 +19,4 @@ const square = board / 8
 const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
-drawFilledRect(sideGap, topGap, square, square, 'black')
+drawFilledRect(sideGap, topGap, square, square, 'white')
