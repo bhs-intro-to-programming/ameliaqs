@@ -17,6 +17,6 @@ const BLACK_PAWN = '♟';
 const board = Math.min(width, height)
 const square = board / 8
 console.log(board)
-cosole.log(square)
+console.log(square)
 
 drawFilledRect(Math.min (width, height) / 8, 0, Math.min(width, height)/4 , Math.min (width, height) / 8, 'black')
