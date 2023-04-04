@@ -14,6 +14,8 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 //drawText(WHITE_KING, width / 2, height / 2, 'black', 64);
 
-return Math.min(width,height)
+const board = Math.min(width, height)
+const square = board / 8
+console.log(board)
 
 drawFilledRect(Math.min (width, height) / 8, 0, Math.min(width, height)/4 , Math.min (width, height) / 8, 'black')
