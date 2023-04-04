@@ -20,7 +20,7 @@ const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
 let i = 0
-for (i = 0; i < 4; i++) {
+for (i = 0; i < 8; i++) {
   if (i % 2 === 0) {
     drawFilledRect(sideGap + i * square, topGap, (i + 1) * square, square, 'white')
   }
