@@ -13,3 +13,8 @@ const BLACK_PAWN = '♟';
 
 // Example of drawing one of the pieces
 drawText(WHITE_KING, width / 2, height / 2, 'black', 64);
+
+const Math.min(width, height) = x
+for (let i = 0; i < 4; i++) {
+  drawFilledRect(i * (x / 8), y, width, height, color)
+}
