@@ -17,4 +17,4 @@ const BLACK_PAWN = '♟';
 let x = (width, height) => { Math.min (width, height) }
 console.log(x)
 
-drawFilledRect(Math.min (width, height) / 8, 100, 100, 100, 'black')
+drawFilledRect(Math.min (width, height) / 8, 0, 100, 100, 'black')
