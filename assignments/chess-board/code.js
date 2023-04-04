@@ -28,7 +28,6 @@ for (r = 0; r < 4; r++) {
       drawFilledRect(sideGap + (s * c), topGap + (s * 2 * r), s, s, color)
     }
   } else {
-    for (r = 0; r < 4; r++) {
       for (c = 0; c < 8; c++) {
         const color = (c % 2) === 0 ? 'black' : 'beige'
         drawFilledRect(sideGap + (s * c), topGap + (s * 2 * r) + s, s, s, color)
