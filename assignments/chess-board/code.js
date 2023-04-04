@@ -20,8 +20,10 @@ const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
 let i = 0
-for (i = 0; i < 8; i++) {
-  const color = (i % 2) === 0 ? 'beige' : 'black'
-  drawFilledRect(sideGap + (s * i), topGap, (s + 1), s, color)
+let j = 0
+for (j = 0; j < 8; j++) {
+  for (i = 0; i < 8; i++) {
+    const color = (i % 2) === 0 ? 'beige' : 'black'
+    drawFilledRect(sideGap + (s * i), topGap + (s * j), i * (s + 1), j * (s + 1), color)
+  }
 }
-
