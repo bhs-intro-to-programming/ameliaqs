@@ -15,17 +15,13 @@ const BLACK_PAWN = '♟';
 //drawText(WHITE_KING, width / 2, height / 2, 'black', 64);
 
 const board = Math.min(width, height)
-const square = board / 8
+const s = board / 8
 const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
 let i = 0
 for (i = 0; i < 8; i++) {
-  if (i % 2 === 1) {
-    drawFilledRect(sideGap + (i * square), topGap, (i + 1) * square, square, 'white')
-  }
-  else {
-    drawFilledRect(sideGap, topGap, square, square, 'black')
-  }
+const color = (i % 2) === 0 ? 'black' : 'white'
+drawFilledRect(sideGap + (s * i), topGap, (s + 1), s, color)
 }
 
