@@ -16,7 +16,7 @@ const BLACK_PAWN = '♟';
 
 const board = Math.min(width, height)
 const square = board / 8
-console.log(board)
-console.log(square)
+const sideGap = (width - board) / 2
+const topGap = (height - board) / 2
 
-drawFilledRect(Math.min (width, height) / 8, 0, Math.min(width, height)/4 , Math.min (width, height) / 8, 'black')
+drawFilledRect(sideGap, topGap, square, square, 'black')
