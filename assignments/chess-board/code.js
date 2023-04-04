@@ -24,6 +24,6 @@ let j = 0
 for (j = 0; j < 8; j++) {
   for (i = 0; i < 8; i++) {
     const color = (i % 2) === 0 ? 'beige' : 'black'
-    drawFilledRect(sideGap + (s * i), topGap, (s + 1), s, color)
+    drawFilledRect(sideGap + (s * i), topGap, (s + 1) + 100, s, color)
   }
 }
