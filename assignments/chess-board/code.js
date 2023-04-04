@@ -20,7 +20,7 @@ const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
 let c = 0
-let r = 0
+
 for (r = 0; r < 8; r++) {
   for (c = 0; c < 8; c++) {
     const color = (r + c) % 2 === 0 ? 'beige' : 'black'
