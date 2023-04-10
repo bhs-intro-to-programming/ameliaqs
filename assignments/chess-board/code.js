@@ -26,4 +26,4 @@ for (let r = 0; r < 8; r++) {
   }
 }
 
-Array(8).fill().map(() => Array(8).fill(''))
+const pieces = Array(8).fill().map(() => Array(8).fill(''))
