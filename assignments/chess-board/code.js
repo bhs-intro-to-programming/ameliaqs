@@ -49,4 +49,10 @@ registerOnclick((x, y) => {
     }
     drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'green', 1)
   }
+  if (pieces[r][c] = BLACK_PAWN) {
+    if (r = 6) {
+      drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r - 2)) + highlightWidth, s / 2, 'green', 1)
+    }
+    drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r - 1)) + highlightWidth, s / 2, 'green', 1)
+  }
 })
