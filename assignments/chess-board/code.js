@@ -40,8 +40,8 @@ for (let r = 0; r < 8; r++) {
   }
 }
 registerOnclick((x, y) => {
-  let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
-console.log('col' + c)
-console.log('row' + r)
+  let c = Math.floor((x - sideGap) / s)
+  if (pieces[r][c] = WHITE_PAWN) 
+    drawCircle(sideGap + (s * c), topGap + (s * r), s, 'green', lineWidth=1)
 })
