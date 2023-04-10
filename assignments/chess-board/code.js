@@ -40,5 +40,5 @@ for (let r = 0; r < 8; r++) {
   }
 }
 registerOnclick((x, y) => {
-  console.log(x, y)
+  let c = Math.floor(x / s)
 })
