@@ -29,5 +29,6 @@ for (let r = 0; r < 8; r++) {
 const pieces = Array(8).fill().map(() => Array(8).fill(''))
 for (let i = 0; i < 8; i++) {
   pieces[1][i] = BLACK_PAWN
+  pieces [6][i] = WHITE_PAWN
 }
 console.log(pieces)
