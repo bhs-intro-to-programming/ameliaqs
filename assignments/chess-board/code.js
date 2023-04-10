@@ -30,4 +30,4 @@ const pieces = Array(8).fill().map(() => Array(8).fill(''))
 for (let i = 0; i < 8; i++) {
   pieces[1][i] = BLACK_PAWN
 }
-console.log('pieces')
+console.log(pieces)
