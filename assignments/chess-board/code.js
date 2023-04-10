@@ -19,16 +19,6 @@ const s = board / 8
 const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
-for (let r = 0; r < 8; r++) {
-  for (let c = 0; c < 8; c++) {
-    const color = (r + c) % 2 === 0 ? 'beige' : 'black'
-    drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
-    if (pieces[r][c] !== '') {
-      drawText(pieces[r][c], sideGap + (s * c), topGap + (s * r), 'black', 64)
-    }
-  }
-}
-
 const pieces = Array(8).fill().map(() => Array(8).fill(''))
 let row0 = [BLACK_ROOK, BLACK_KNIGHT, BLACK_BISHOP, BLACK_QUEEN, BLACK_KING, BLACK_BISHOP, BLACK_KNIGHT, BLACK_ROOK]
 let row7 = [WHITE_ROOK, WHITE_KNIGHT, WHITE_BISHOP, WHITE_QUEEN, WHITE_KING, WHITE_BISHOP, WHITE_KNIGHT, WHITE_ROOK]
@@ -40,4 +30,16 @@ for (let i = 0; i < 8; i++) {
   pieces[0][i] = row0[i]
   pieces[7][i] = row7[i]
 }
+
+for (let r = 0; r < 8; r++) {
+  for (let c = 0; c < 8; c++) {
+    const color = (r + c) % 2 === 0 ? 'beige' : 'black'
+    drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
+    if (pieces[r][c] !== '') {
+      drawText(pieces[r][c], sideGap + (s * c), topGap + (s * r), 'black', 64)
+    }
+  }
+}
+
+
 console.log(pieces)
