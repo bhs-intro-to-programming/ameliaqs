@@ -27,8 +27,12 @@ for (let r = 0; r < 8; r++) {
 }
 
 const pieces = Array(8).fill().map(() => Array(8).fill(''))
+let black = [BLACK_ROOK, BLACK_KNIGHT, BLACK_BISHOP, BLACK_QUEEN, BLACK_KING, BLACK_BISHOP, BLACK_KNIGHT, BLACK_ROOK]
 for (let i = 0; i < 8; i++) {
   pieces[1][i] = BLACK_PAWN
   pieces [6][i] = WHITE_PAWN
+}
+for (let i = 0; i < 8; i++) {
+  pieces[0][i] = black[i]
 }
 console.log(pieces)
