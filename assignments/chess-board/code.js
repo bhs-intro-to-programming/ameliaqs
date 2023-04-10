@@ -42,6 +42,6 @@ for (let r = 0; r < 8; r++) {
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
-console.log(x)
 console.log(c)
+console.log(r)
 })
