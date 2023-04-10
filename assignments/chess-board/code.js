@@ -35,7 +35,7 @@ for (let r = 0; r < 8; r++) {
   for (let c = 0; c < 8; c++) {
     const color = (r + c) % 2 === 0 ? 'beige' : 'black'
     drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
-    drawText(pieces[r][c], sideGap + (s * c), topGap + (s * r), 'grey', board / 8)
+    drawText(pieces[r][c], sideGap + (s * c), topGap + (s * r), 'grey', 60)
     
   }
 }
