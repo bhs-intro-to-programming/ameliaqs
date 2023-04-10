@@ -25,3 +25,5 @@ for (let r = 0; r < 8; r++) {
     drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
   }
 }
+
+Array(8).fill().map(() => Array(8).fill(''))
