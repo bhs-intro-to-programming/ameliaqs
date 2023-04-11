@@ -65,4 +65,5 @@ const blackPawn = (selected, r, c) => {
       console.log('y')
     }
     }
+blackPawn
 
