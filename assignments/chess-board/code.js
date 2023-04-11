@@ -46,7 +46,8 @@ registerOnclick((x, y) => {
   let highlightWidth = s / 2
   if (pieces[r][c] = BLACK_PAWN) {
     drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'green', 1)
-    console.log(pieces[r][c])
+  
   }
+    console.log(pieces[r][c])
   
 })
