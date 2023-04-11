@@ -46,6 +46,7 @@ let selected = null;
     console.log(r)
     return true
     } else {
+      console.log(selected.row)
       console.log(r)
       return false
     }
