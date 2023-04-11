@@ -41,7 +41,13 @@ const drawBoard = () => {
 }
 
 let selected = null;
-
+const blackPawn = (selected.row, selected.col) => {
+  if (pieces[selected.row][selected.col] === '') {
+    console.log('y')
+  } else {
+    console.log('n')
+  }
+}
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
@@ -62,10 +68,4 @@ registerOnclick((x, y) => {
 drawBoard()
 
 
-const blackPawn = (selected.row, selected.col) => {
-  if (pieces[selected.row][selected.col] === '') {
-    console.log('y')
-  } else {
-    console.log('n')
-  }
-}
+
