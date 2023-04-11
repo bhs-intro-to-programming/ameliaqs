@@ -67,6 +67,6 @@ registerOnclick((x, y) => {
   //}
 })
 drawBoard()
-blackPawn(3, 3)
+blackPawn(0)
 
 
