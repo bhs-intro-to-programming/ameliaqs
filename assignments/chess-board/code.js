@@ -61,9 +61,7 @@ registerOnclick((x, y) => {
 })
 drawBoard()
 
-const isLegal = (selected.row, selected.col, r, c, pieces[r][c]) => {
 
-}
 const blackPawn = ((selected.row, selected.col, r, c, pieces[r][c])) => {
   if (pieces[selected.row][selected.col] === '') {
     console.log('y')
