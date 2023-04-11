@@ -42,7 +42,8 @@ const drawBoard = () => {
 
 let selected = null;
 const blackPawn = (selected) => {
-  console.log('hi')
+  if (selected = null) {
+  console.log('hi')}
 }
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
