@@ -42,16 +42,9 @@ const drawBoard = () => {
 
 let selected = null;
 
-
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
-  const blackPawn = (r, c) => {
-    return r === c
-    }
-  if (blackPawn(r, c)) {
-    console.log('hi')
-  }
   if (selected === null) {
     selected = { row: r, col: c };
   } else {
@@ -67,5 +60,9 @@ registerOnclick((x, y) => {
 })
 drawBoard()
 
-
+const blackPawn = (selected, r, c) => {
+    if (pieces[selected.row + 1] === '') {
+      console.log('y')
+    }
+    }
 
