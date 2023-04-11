@@ -40,20 +40,19 @@ const drawBoard = () => {
   }
 }
 
-let clicked = null;
+let selected = null;
 
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
-  if (clicked === null) {
-    clicked = { row: r, col: c };
+  if (selected === null) {
+    selected = { row: r, col: c };
   } else {
-    pieces[r][c] = pieces[clicked.row][clicked.col]
-    pieces[clicked.row][clicked.col] = ''
-    clicked = null
+    pieces[r][c] = pieces[selected.row][selected.col]
+    pieces[selected.row][selected.col] = ''
+    selected = null
     drawBoard()
   }
- 
   //let highlightWidth = s / 2
   //if (pieces[r][c] === BLACK_PAWN) {
   //  drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'green', 1)
@@ -61,4 +60,13 @@ registerOnclick((x, y) => {
 })
 drawBoard()
 
-const isLegal = (clicked.row, clicked.col, r, c, pieces[r][c])
+const isLegal = (selected.row, selected.col, r, c, pieces[r][c]) => {
+
+}
+const blackPawn = ((selected.row, selected.col, r, c, pieces[r][c])) => {
+  if (pieces[selected.row][selected.col] === '') {
+    console.log('y')
+  } else {
+    console.log('n')
+  }
+}
