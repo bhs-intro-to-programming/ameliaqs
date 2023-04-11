@@ -46,7 +46,6 @@ let selected = null;
     console.log(r)
     return true
     } else {
-      console.log(selected.row)
       console.log(r)
       return false
     }
@@ -60,9 +59,10 @@ registerOnclick((x, y) => {
   } else {
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
+     blackPawn(selected, r)
     selected = null
     drawBoard()
-    blackPawn(selected, r)
+   
   }
 
   //let highlightWidth = s / 2
