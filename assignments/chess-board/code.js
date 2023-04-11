@@ -42,6 +42,12 @@ const drawBoard = () => {
 
 let selected = null;
 
+const blackPawn = (selected, r, c) => {
+    if (pieces[selected.row + 1] === '') {
+      console.log('y')
+    }
+    }
+
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
@@ -53,6 +59,7 @@ registerOnclick((x, y) => {
     selected = null
     drawBoard()
   }
+  blackPawn
   //let highlightWidth = s / 2
   //if (pieces[r][c] === BLACK_PAWN) {
   //  drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'green', 1)
@@ -60,10 +67,4 @@ registerOnclick((x, y) => {
 })
 drawBoard()
 
-const blackPawn = (selected, r, c) => {
-    if (pieces[selected.row + 1] === '') {
-      console.log('y')
-    }
-    }
-blackPawn
 
