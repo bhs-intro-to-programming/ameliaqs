@@ -42,8 +42,8 @@ const drawBoard = () => {
 
 let selected = null;
 
-const blackPawn = (r, c) => {
-  if (r = c) {
+const blackPawn = (x) => {
+  if (x = 0) {
     return r
     console.log(r)
   }
