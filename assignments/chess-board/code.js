@@ -48,6 +48,7 @@ const blackPawn = (r, c) => {
     console.log(r)
   }
 }
+blackPawn
 
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
