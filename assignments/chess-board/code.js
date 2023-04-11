@@ -24,20 +24,21 @@ let row0 = [BLACK_ROOK, BLACK_KNIGHT, BLACK_BISHOP, BLACK_QUEEN, BLACK_KING, BLA
 let row7 = [WHITE_ROOK, WHITE_KNIGHT, WHITE_BISHOP, WHITE_QUEEN, WHITE_KING, WHITE_BISHOP, WHITE_KNIGHT, WHITE_ROOK]
 for (let i = 0; i < 8; i++) {
   pieces[1][i] = BLACK_PAWN
-  pieces [6][i] = WHITE_PAWN
+  pieces[6][i] = WHITE_PAWN
 }
 for (let i = 0; i < 8; i++) {
   pieces[0][i] = row0[i]
   pieces[7][i] = row7[i]
 }
 const drawBoard = () => {
-for (let r = 0; r < 8; r++) {
-  for (let c = 0; c < 8; c++) {
-    const color = (r + c) % 2 === 0 ? 'beige' : 'black'
-    drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
-    drawText(pieces[r][c], sideGap + (s * c), topGap + (s * (r + 1)), 'grey', 64)
+  for (let r = 0; r < 8; r++) {
+    for (let c = 0; c < 8; c++) {
+      const color = (r + c) % 2 === 0 ? 'beige' : 'black'
+      drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
+      drawText(pieces[r][c], sideGap + (s * c), topGap + (s * (r + 1)), 'grey', 64)
+    }
   }
-}}
+}
 
 let clicked = null;
 
@@ -52,11 +53,12 @@ registerOnclick((x, y) => {
     clicked = null
     drawBoard()
   }
-  console.log(r, c, pieces[r][c])
-  let highlightWidth = s / 2
-  if (pieces[r][c] === BLACK_PAWN) {
-    drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'green', 1)
-  
-  }
+ 
+  //let highlightWidth = s / 2
+  //if (pieces[r][c] === BLACK_PAWN) {
+  //  drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'green', 1)
+  //}
 })
 drawBoard()
+
+const isLegal = (clicked.row, clicked.col, r, c, pieces[r][c])
