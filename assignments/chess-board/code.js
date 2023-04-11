@@ -46,7 +46,7 @@ let selected = null;
     console.log(r)
     return true
     } else {
-      console.log('false')
+      console.log(r)
       return false
     }
 }
