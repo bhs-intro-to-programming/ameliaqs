@@ -41,7 +41,7 @@ const drawBoard = () => {
 }
 
 let selected = null;
-const blackPawn = (selected.row, selected.col) => {
+const blackPawn = (selected) => {
   console.log('hi')
 }
 registerOnclick((x, y) => {
