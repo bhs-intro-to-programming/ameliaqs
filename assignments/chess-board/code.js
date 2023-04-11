@@ -46,6 +46,7 @@ let selected = null;
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
+  console.log(r, c)
   if (selected === null) {
     selected = { row: r, col: c };
   } else {
@@ -60,6 +61,6 @@ registerOnclick((x, y) => {
   //}
 })
 drawBoard()
-console.log(r, c)
+
 
 
