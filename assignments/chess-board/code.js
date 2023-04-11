@@ -53,6 +53,7 @@ registerOnclick((x, y) => {
     selected = null
     drawBoard()
   }
+  blackPawn
   //let highlightWidth = s / 2
   //if (pieces[r][c] === BLACK_PAWN) {
   //  drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'green', 1)
