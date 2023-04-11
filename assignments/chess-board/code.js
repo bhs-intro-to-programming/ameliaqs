@@ -62,6 +62,7 @@ registerOnclick((x, y) => {
     pieces[selected.row][selected.col] = ''
     selected = null
     drawBoard()
+    blackPawn(selected, r)
   }
 
   //let highlightWidth = s / 2
