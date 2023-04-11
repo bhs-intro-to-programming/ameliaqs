@@ -43,7 +43,7 @@ const drawBoard = () => {
 let selected = null;
   const blackPawn = (selected, r) => {
   if (selected !== null && (selected.row + 1) === r) {
-    console.log('true')
+    console.log(r)
     return true
     } else {
       console.log('false')
