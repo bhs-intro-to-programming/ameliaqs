@@ -43,13 +43,13 @@ const drawBoard = () => {
 let selected = null;
 
 const blackPawn = (selected, r, c) => {
-  if (pieces[selected.row + 1] === '') {
-    console.log('y')
+  if ((selected.row + 1) === r) {
+    console.log('true')
     return true
-  } else {
-    console.log('n')
-    return false
-  }
+    } else {
+      console.log('false')
+      return false
+    }
 }
 
 registerOnclick((x, y) => {
