@@ -41,14 +41,14 @@ const drawBoard = () => {
 }
 
 let selected = null;
-  const blackPawn = (selected, r) => {
+const blackPawn = (selected, r) => {
   if ((selected.row + 1) === r) {
     console.log('true')
     return true
-    } else {
-      console.log('false')
-      return false
-    }
+  } else {
+    console.log('false')
+    return false
+  }
 }
 
 registerOnclick((x, y) => {
@@ -59,10 +59,10 @@ registerOnclick((x, y) => {
   } else {
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
-     blackPawn(selected, r)
+    blackPawn(selected, r)
     selected = null
     drawBoard()
-   
+
   }
 
   //let highlightWidth = s / 2
