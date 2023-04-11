@@ -48,7 +48,7 @@ registerOnclick((x, y) => {
   let r = Math.floor((y - topGap) / s)
   const blackPawn = (r, c) => {
     console.log(r, c)
-  blackPawn
+  blackPawn(r, c)
   }
   if (selected === null) {
     selected = { row: r, col: c };
