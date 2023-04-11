@@ -53,12 +53,12 @@ registerOnclick((x, y) => {
   let r = Math.floor((y - topGap) / s)
   if (selected === null) {
     selected = { row: r, col: c };
+    blackPawn(selected, r, c)
   } else {
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
     selected = null
     drawBoard()
-    blackPawn(selected)
   }
 
   //let highlightWidth = s / 2
