@@ -59,7 +59,7 @@ registerOnclick((x, y) => {
         console.log(selected.row + xselected.row + 'true')
         return true
       } else {
-        console.log('false')
+        console.log(selected.row + xselected.row + 'false')
         return false
       }
     }
