@@ -41,7 +41,7 @@ const drawBoard = () => {
 }
 
 let selected = null;
-let xselected = null
+let target = null
 
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
@@ -50,12 +50,12 @@ registerOnclick((x, y) => {
     selected = { row: r, col: c };
   } else {
     console.log(selected.row)
-    xselected = { row: r, col: c };
-    console.log(xselected.row + ' x')
+    target = { row: r, col: c };
+    console.log(target.row + ' x')
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
-    const blackPawn = (xselected, selected) => {
-      if ((xselected.row + 1) === selected.row) {
+    const blackPawn = (target, selected) => {
+      if ((target.row + 1) === selected.row) {
         console.log('true')
         return true
       } else {
