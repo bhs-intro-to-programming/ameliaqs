@@ -51,7 +51,7 @@ registerOnclick((x, y) => {
   } else {
     console.log(selected.row)
     target = { row: r, col: c };
-    console.log(target.row + ' x')
+    console.log('s' + selected.row + 't' + target.row)
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
     const blackPawn = (target, selected) => {
