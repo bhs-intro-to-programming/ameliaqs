@@ -48,7 +48,7 @@ registerOnclick((x, y) => {
   if (selected === null) {
     selected = { row: r, col: c };
   } else {
-    console.log(selected)
+    console.log(selected.row)
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
     const blackPawn = (selected, r) => {
