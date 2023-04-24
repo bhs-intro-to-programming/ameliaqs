@@ -50,7 +50,7 @@ registerOnclick((x, y) => {
     selected = { row: r, col: c };
   } else {
     move = { row: r, col: c };
-    console.log('s' + selected.row + 't' + move.row)
+    console.log('s' + selected.row + 'm' + move.row)
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
     const blackPawn = (move, selected) => {
@@ -66,7 +66,6 @@ registerOnclick((x, y) => {
     blackPawn(selected, r)
     selected = null
     drawBoard()
-
   }
 
 
