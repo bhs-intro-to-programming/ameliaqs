@@ -48,17 +48,18 @@ registerOnclick((x, y) => {
   if (selected === null) {
     selected = { row: r, col: c };
   } else {
+    console.log(selected)
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
     const blackPawn = (selected, r) => {
-  if ((selected.row + 1) === r) {
-    console.log('true')
-    return true
-  } else {
-    console.log('false')
-    return false
-  }
-}
+      if ((selected.row + 1) === r) {
+        console.log('true')
+        return true
+      } else {
+        console.log('false')
+        return false
+      }
+    }
     blackPawn(selected, r)
     selected = null
     drawBoard()
