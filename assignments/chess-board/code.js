@@ -60,6 +60,7 @@ registerOnclick((x, y) => {
         return true
       } else {
         console.log('false')
+        console.log(target.row + 1)
         return false
       }
     }
