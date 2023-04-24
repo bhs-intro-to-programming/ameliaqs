@@ -54,8 +54,8 @@ registerOnclick((x, y) => {
     console.log(xselected.row + ' x')
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
-    const blackPawn = (xselected, r) => {
-      if ((xselected.row + 1) === r) {
+    const blackPawn = (xselected, selected.row) => {
+      if ((xselected.row + 1) === selected.row) {
         console.log('true')
         return true
       } else {
