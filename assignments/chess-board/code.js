@@ -47,6 +47,7 @@ registerOnclick((x, y) => {
   let r = Math.floor((y - topGap) / s)
   if (selected === null) {
     selected = { row: r, col: c };
+    console.log(selected.row)
   } else {
     console.log(selected.row)
     pieces[r][c] = pieces[selected.row][selected.col]
