@@ -79,4 +79,3 @@ registerOnclick((x, y) => {
 })
 drawBoard()
 
-
