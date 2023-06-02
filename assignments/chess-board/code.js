@@ -77,7 +77,7 @@ registerOnclick((x, y) => {
     let d = selected.piece.color === 'white' ? 1 : -1
     if (pawnMove(move, selected, d)) {
       pieces[r][c] = pieces[selected.row][selected.col]
-      pieces[selected.row][selected.col] = ''
+      pieces[selected.row][selected.col] = undefined
     }
     else {
       console.log('no')
