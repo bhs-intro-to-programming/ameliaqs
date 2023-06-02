@@ -14,11 +14,13 @@ const BLACK_PAWN = '♟';
 // Example of drawing one of the pieces
 // drawText(WHITE_KING, width / 2, height / 2, 'black', 64);
 
+// set dimensions
 const board = Math.min(width, height)
 const s = board / 8
 const sideGap = (width - board) / 2
 const topGap = (height - board) / 2
 
+// draw board and pieces
 const pieces = Array(8).fill().map(() => Array(8).fill(''))
 let row0 = [BLACK_ROOK, BLACK_KNIGHT, BLACK_BISHOP, BLACK_QUEEN, BLACK_KING, BLACK_BISHOP, BLACK_KNIGHT, BLACK_ROOK]
 let row7 = [WHITE_ROOK, WHITE_KNIGHT, WHITE_BISHOP, WHITE_QUEEN, WHITE_KING, WHITE_BISHOP, WHITE_KNIGHT, WHITE_ROOK]
@@ -43,17 +45,6 @@ const drawBoard = () => {
 let selected = null;
 let move = null
 
-const blackPawn = (move, selected) => {
-  if ((move.row + 1) === selected.row) {
-    console.log('true')
-    return true
-  } else {
-    console.log('false')
-    console.log(move.row + 1)
-    return false
-  }
-}
-
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
@@ -69,6 +60,19 @@ registerOnclick((x, y) => {
     selected = null
     drawBoard()
   }
+
+
+const blackPawn = (move, selected) => {
+  if ((move.row + 1) === selected.row) {
+    console.log('true')
+    return true
+  } else {
+    console.log('false')
+    console.log(move.row + 1)
+    return false
+  }
+}
+
 
 
 
