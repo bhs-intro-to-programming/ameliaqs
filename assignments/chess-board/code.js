@@ -61,6 +61,8 @@ const legalMove = (move, selected) => {
     return pawnMove(move, selected, d)
   } else if (selected.piece.kind === 'rook') {
     return rookMove(move, selected)
+  } else {
+    console.log('nyi')
   }
 }
 // say if white pawn move is legal (moving one space forward)
