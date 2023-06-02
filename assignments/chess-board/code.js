@@ -1,4 +1,8 @@
-const WHITE_KING = '♔';
+const piece = (kind, color, icon) => {
+  return { kind, color, icon };
+};
+
+const WHITE_KING = piece('king', 'white', '♔');
 const WHITE_QUEEN = '♕';
 const WHITE_ROOK = '♖';
 const WHITE_BISHOP = '♗';
@@ -10,6 +14,9 @@ const BLACK_ROOK = '♜';
 const BLACK_BISHOP = '♝';
 const BLACK_KNIGHT = '♞';
 const BLACK_PAWN = '♟';
+
+
+
 
 // Example of drawing one of the pieces
 // drawText(WHITE_KING, width / 2, height / 2, 'black', 64);
@@ -37,7 +44,7 @@ const drawBoard = () => {
     for (let c = 0; c < 8; c++) {
       const color = (r + c) % 2 === 0 ? 'beige' : 'black'
       drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
-      drawText(pieces[r][c], sideGap + (s * c), topGap + (s * (r + 1)), 'grey', 64)
+      drawText(pieces[r][c].icon, sideGap + (s * c), topGap + (s * (r + 1)), 'grey', 64)
     }
   }
 }
