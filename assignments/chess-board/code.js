@@ -52,7 +52,6 @@ const whitePawn = (move, selected) => {
     return true
   } else {
     console.log('false')
-    console.log(move.row + 1)
     return false
   }
 }
