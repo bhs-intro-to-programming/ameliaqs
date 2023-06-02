@@ -47,7 +47,7 @@ let move = null
 
 // say if white pawn move is legal (moving one space forward)
 const whitePawn = (move, selected) => {
-  if ((move.row + 1) === selected.row) {
+  if ((move.row - 1) === selected.row) {
     console.log('true')
     return true
   } else {
