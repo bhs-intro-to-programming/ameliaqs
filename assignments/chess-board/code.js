@@ -45,6 +45,17 @@ const drawBoard = () => {
 let selected = null;
 let move = null
 
+const blackPawn = (move, selected) => {
+  if ((move.row + 1) === selected.row) {
+    console.log('true')
+    return true
+  } else {
+    console.log('false')
+    console.log(move.row + 1)
+    return false
+  }
+}
+
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
@@ -60,22 +71,6 @@ registerOnclick((x, y) => {
     selected = null
     drawBoard()
   }
-
-
-const blackPawn = (move, selected) => {
-  if ((move.row + 1) === selected.row) {
-    console.log('true')
-    return true
-  } else {
-    console.log('false')
-    console.log(move.row + 1)
-    return false
-  }
-}
-
-
-
-
 
   //let highlightWidth = s / 2
   //if (pieces[r][c] === BLACK_PAWN) {
