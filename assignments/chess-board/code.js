@@ -64,10 +64,12 @@ registerOnclick((x, y) => {
   } else {
     move = { row: r, col: c };
     console.log('s' + selected.row + '; m' + move.row)
-    pieces[r][c] = pieces[selected.row][selected.col]
-    pieces[selected.row][selected.col] = ''
+    if (whitePawn(move, selected)) {
+      pieces[r][c] = pieces[selected.row][selected.col]
+      pieces[selected.row][selected.col] = ''
+    }
 
-    whitePawn(move, selected)
+
     selected = null
     drawBoard()
   }
