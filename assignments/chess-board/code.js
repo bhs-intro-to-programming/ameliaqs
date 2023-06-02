@@ -66,6 +66,14 @@ const pawnMove = (move, selected, direction) => {
   }
 }
 
+const rookMove = (move, selected) => {
+  if (move.row === selected.row || move.col === selected.col) {
+    return true
+  } else {
+    return false
+  }
+}
+
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
