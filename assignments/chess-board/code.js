@@ -45,8 +45,8 @@ const drawBoard = () => {
 let selected = null;
 let move = null
 
-// say if black pawn move is legal (moving one space forward)
-const blackPawn = (move, selected) => {
+// say if white pawn move is legal (moving one space forward)
+const whitePawn = (move, selected) => {
   if ((move.row + 1) === selected.row) {
     console.log('true')
     return true
@@ -68,13 +68,12 @@ registerOnclick((x, y) => {
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
 
-    blackPawn(move, selected)
+    whitePawn(move, selected)
     selected = null
     drawBoard()
   }
 
   let highlightWidth = s / 2
-  console.log(pieces[r][c])
   if (pieces[r][c] === BLACK_PAWN) {
     drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r + 1)) + highlightWidth, s / 2, 'red', 1)
   }
