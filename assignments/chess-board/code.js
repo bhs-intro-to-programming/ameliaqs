@@ -68,6 +68,9 @@ registerOnclick((x, y) => {
       pieces[r][c] = pieces[selected.row][selected.col]
       pieces[selected.row][selected.col] = ''
     }
+    else {
+      console.log('no')
+    }
 
 
     selected = null
