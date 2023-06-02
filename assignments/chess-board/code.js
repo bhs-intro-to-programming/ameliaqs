@@ -55,6 +55,14 @@ const drawBoard = () => {
 let selected = null;
 let move = null
 
+const legalMove = (move, selected) => {
+  let d = selected.piece.color === 'white' ? 1 : -1
+  if (selected.piece.kind === 'pawn') {
+    return pawnMove(move, selected, d)
+  } else if (selected.piece.kind === 'rook') {
+    return rookMove(move, selected)
+  }
+}
 // say if white pawn move is legal (moving one space forward)
 const pawnMove = (move, selected, direction) => {
   if ((move.row + direction) === selected.row && move.col === selected.col) {
@@ -82,24 +90,25 @@ registerOnclick((x, y) => {
   } else {
     move = { row: r, col: c };
     console.log('s' + selected.row + '; m' + move.row)
-    let d = selected.piece.color === 'white' ? 1 : -1
-    if (pawnMove(move, selected, d)) {
-      pieces[r][c] = pieces[selected.row][selected.col]
-      pieces[selected.row][selected.col] = undefined
-    }
-    else {
-      console.log('no')
-    }
 
-
-    selected = null
-    drawBoard()
   }
+  if (pawnMove(move, selected, d)) {
+    pieces[r][c] = pieces[selected.row][selected.col]
+    pieces[selected.row][selected.col] = undefined
+  }
+  else {
+    console.log('no')
+  }
+
+
+  selected = null
+  drawBoard()
+}
 
   let highlightWidth = s / 2
   if (pieces[r][c] === WHITE_PAWN) {
-    drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r - 1)) + highlightWidth, s / 2, 'green', 1)
-  }
+  drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r - 1)) + highlightWidth, s / 2, 'green', 1)
+}
 })
 drawBoard()
 
