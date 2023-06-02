@@ -56,8 +56,8 @@ let selected = null;
 let move = null
 
 // say if white pawn move is legal (moving one space forward)
-const whitePawn = (move, selected) => {
-  if ((move.row + 1) === selected.row && move.col === selected.col) {
+const pawnMove = (move, selected, direction) => {
+  if ((move.row + direction) === selected.row && move.col === selected.col) {
     console.log('trueq')
     return true
   } else {
@@ -70,11 +70,12 @@ registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
   if (selected === null) {
-    selected = { row: r, col: c };
+    selected = { row: r, col: c, piece: pieces[r][c] };
   } else {
     move = { row: r, col: c };
     console.log('s' + selected.row + '; m' + move.row)
-    if (whitePawn(move, selected)) {
+    let d = selected.piece.color === 'white' ? 1 : -1
+    if (pawnMove(move, selected, d)) {
       pieces[r][c] = pieces[selected.row][selected.col]
       pieces[selected.row][selected.col] = ''
     }
