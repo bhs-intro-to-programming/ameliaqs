@@ -1,19 +1,20 @@
+// piece is an object that says what type of piece it is
 const piece = (kind, color, icon) => {
   return { kind, color, icon };
 };
 
-const WHITE_KING = piece('king', 'white', '♔');
-const WHITE_QUEEN = '♕';
-const WHITE_ROOK = '♖';
-const WHITE_BISHOP = '♗';
-const WHITE_KNIGHT = '♘';
-const WHITE_PAWN = '♙';
-const BLACK_KING = '♚';
-const BLACK_QUEEN = '♛';
-const BLACK_ROOK = '♜';
-const BLACK_BISHOP = '♝';
-const BLACK_KNIGHT = '♞';
-const BLACK_PAWN = '♟';
+const WHITE_KING   = piece('king', 'white', '♔');
+const WHITE_QUEEN  = piece('queen', 'white', '♕');
+const WHITE_ROOK   = piece('rook', 'white', '♖');
+const WHITE_BISHOP = piece('bishop', 'white', '♗');
+const WHITE_KNIGHT = piece('knight', 'white', '♘');
+const WHITE_PAWN   = piece('pawn', 'white', '♙');
+const BLACK_KING   = piece('king', 'black', '♚');
+const BLACK_QUEEN  = piece('queen', 'black', '♛');
+const BLACK_ROOK   = piece('rook', 'black', '♜');
+const BLACK_BISHOP = piece('bishop', 'black', '♝');
+const BLACK_KNIGHT = piece('knight', 'black', '♞');
+const BLACK_PAWN   = piece('pawn', 'black', '♟');
 
 
 
