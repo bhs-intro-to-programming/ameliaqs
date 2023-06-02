@@ -92,7 +92,7 @@ registerOnclick((x, y) => {
   } else {
     move = { row: r, col: c };
     console.log('s' + selected.row + '; m' + move.row)
-    if (pawnMove(move, selected, d)) {
+    if (legalMove(move, selected)) {
       pieces[r][c] = pieces[selected.row][selected.col]
       pieces[selected.row][selected.col] = undefined
     }
