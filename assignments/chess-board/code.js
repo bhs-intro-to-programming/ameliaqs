@@ -68,7 +68,6 @@ registerOnclick((x, y) => {
     pieces[r][c] = pieces[selected.row][selected.col]
     pieces[selected.row][selected.col] = ''
 
-    whitePawn(move, selected)
     selected = null
     drawBoard()
   }
