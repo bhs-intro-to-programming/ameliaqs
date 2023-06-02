@@ -92,25 +92,23 @@ registerOnclick((x, y) => {
   } else {
     move = { row: r, col: c };
     console.log('s' + selected.row + '; m' + move.row)
-
-  }
-  if (pawnMove(move, selected, d)) {
-    pieces[r][c] = pieces[selected.row][selected.col]
-    pieces[selected.row][selected.col] = undefined
-  }
-  else {
-    console.log('no')
-  }
+    if (pawnMove(move, selected, d)) {
+      pieces[r][c] = pieces[selected.row][selected.col]
+      pieces[selected.row][selected.col] = undefined
+    }
+    else {
+      console.log('no')
+    }
 
 
-  selected = null
-  drawBoard()
-}
+    selected = null
+    drawBoard()
+  }
 
   let highlightWidth = s / 2
   if (pieces[r][c] === WHITE_PAWN) {
-  drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r - 1)) + highlightWidth, s / 2, 'green', 1)
-}
+    drawCircle(sideGap + (s * c) + highlightWidth, topGap + (s * (r - 1)) + highlightWidth, s / 2, 'green', 1)
+  }
 })
 drawBoard()
 
