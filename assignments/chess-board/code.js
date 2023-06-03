@@ -55,6 +55,7 @@ const drawBoard = () => {
 let selected = null;
 let move = null
 
+// check if moves are legal
 const legalMove = (move, selected) => {
   let d = selected.piece.color === 'white' ? 1 : -1
   if (selected.piece.kind === 'pawn') {
@@ -65,7 +66,7 @@ const legalMove = (move, selected) => {
     console.log('nyi')
   }
 }
-// say if white pawn move is legal (moving one space forward)
+
 const pawnMove = (move, selected, direction) => {
   if ((move.row + direction) === selected.row && move.col === selected.col) {
     console.log('trueq')
