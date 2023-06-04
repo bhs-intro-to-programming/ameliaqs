@@ -92,7 +92,6 @@ const rookMove = (move, selected) => {
 }
 
 const manhattanDistance = (move, selected) => {
-  console.log(Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col) + 'md')
   return Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col)
 }
 
