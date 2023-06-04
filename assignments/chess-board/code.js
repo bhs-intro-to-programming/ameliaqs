@@ -46,7 +46,7 @@ const drawBoard = () => {
       const color = (r + c) % 2 === 0 ? 'beige' : 'black'
       drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
       if (pieces[r][c] !== undefined) {
-        drawText(pieces[r][c].icon, sideGap + (s * c), topGap + (s * (r + 1)), 'grey', 64)
+        drawText(pieces[r][c].icon, sideGap + (s * c), topGap + (s * (r + 1)), 'pink', 64)
       }
     }
   }
@@ -92,20 +92,12 @@ const rookMove = (move, selected) => {
   }
 }
 
-// is this returning the right thing?
 const manhattanDistance = (move, selected) => {
   return (Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col))
 }
 
 const knightMove = (move, selected) => {
   if (manhattanDistance(move, selected) === 3 && Math.abs(move.col - selected.col) !== 0) {
-    return true
-  } else {
-    return false
-  }
-}
-const xknightMove = (move, selected) => {
-  if (Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col) === 3 && Math.abs(move.row - selected.row) * Math.abs(move.col - selected.col) !== 0) {
     return true
   } else {
     return false
