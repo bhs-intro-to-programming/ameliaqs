@@ -96,14 +96,14 @@ const manhattanDistance = (move, selected) => {
   return Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col)
 }
 
-const knightMove = (move, selected) => {
+const xknightMove = (move, selected) => {
   if (manhattanDistance === 3 && Math.abs(move.col - selected.col) !== 0) {
     return true
   } else {
     return false
   }
 }
-const xknightMove = (move, selected) => {
+const knightMove = (move, selected) => {
   if (Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col) === 3 && Math.abs(move.row - selected.row) * Math.abs(move.col - selected.col) !== 0) {
     return true
   } else {
