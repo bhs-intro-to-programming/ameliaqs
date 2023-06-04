@@ -43,7 +43,7 @@ for (let i = 0; i < 8; i++) {
 const drawBoard = () => {
   for (let r = 0; r < 8; r++) {
     for (let c = 0; c < 8; c++) {
-      const color = (r + c) % 2 === 0 ? 'beige' : 'black'
+      const color = (r + c) % 2 === 0 ? 'white' : 'black'
       drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
       if (pieces[r][c] !== undefined) {
         drawText(pieces[r][c].icon, sideGap + (s * c), topGap + (s * (r + 1)), 'grey', 64)
