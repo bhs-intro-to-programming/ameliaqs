@@ -130,6 +130,7 @@ const queenMove = (move, selected) => {
   }
 }
 
+// add diagonal movement
 const kingMove = (move, selected) => {
   if (manhattanDistance(move, selected) === 1) {
     return true
