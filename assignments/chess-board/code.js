@@ -66,6 +66,8 @@ const legalMove = (move, selected) => {
     return knightMove(move, selected)
   } else if (selected.piece.kind === 'bishop') {
     return bishopMove(move, selected)
+  } else if (selected.piece.kind === 'queen') {
+    return queenMove(move, selected)
   } else {
     console.log('nyi')
   }
@@ -99,6 +101,14 @@ const knightMove = (move, selected) => {
 
 const bishopMove = (move, selected) => {
   if (Math.abs(move.row - selected.row) === Math.abs(move.col - selected.col)) {
+    return true
+  } else {
+    return false
+  }
+}
+
+const queenMove = (move, selected) => {
+  if (rookMove && bishopMove) {
     return true
   } else {
     return false
