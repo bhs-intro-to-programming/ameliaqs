@@ -131,7 +131,7 @@ const queenMove = (move, selected) => {
 }
 
 const kingMove = (move, selected) => {
-  if (manhattanDistance(move, selected) === 1) {
+  if (manhattanDistance(move, selected) === 1 || manhattanDistance(move, selected) === 2 && bishopMove) {
     return true
   } else {
     return false
