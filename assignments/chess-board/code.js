@@ -69,6 +69,7 @@ const legalMove = (move, selected) => {
   } else if (selected.piece.kind === 'queen') {
     return queenMove(move, selected)
   } else if (selected.piece.kind === 'king') {
+    return kingMove(move, selected)
   } else {
     console.log('nyi')
   }
