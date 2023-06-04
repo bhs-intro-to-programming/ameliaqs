@@ -95,6 +95,14 @@ const knightMove = (move, selected) => {
   }
 }
 
+const bishopMove = (move, selected) => {
+  if (Math.abs(move.row - selected.row) === Math.abs(move.col - selected.col)) {
+    return true
+  } else {
+    return false
+  }
+}
+
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
   let r = Math.floor((y - topGap) / s)
