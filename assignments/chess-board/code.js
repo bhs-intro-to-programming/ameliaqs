@@ -88,7 +88,7 @@ const rookMove = (move, selected) => {
 }
 
 const knightMove = (move, selected) => {
-  if (Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col) === 3 && Math.abs(move.row - selected.row) * Math.abs(move.col - selected.col !== 0) {
+  if (Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col) === 3 && Math.abs(move.row - selected.row) * Math.abs(move.col - selected.col) !== 0) {
     return true
   } else {
     return false
