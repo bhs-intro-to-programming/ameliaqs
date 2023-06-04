@@ -77,7 +77,6 @@ const legalMove = (move, selected) => {
 
 const pawnMove = (move, selected, direction) => {
   if ((move.row + direction) === selected.row && move.col === selected.col) {
-    console.log('trueq')
     return true
   } else {
     console.log('false')
@@ -129,7 +128,6 @@ const queenMove = (move, selected) => {
   }
 }
 
-// add diagonal movement
 const kingMove = (move, selected) => {
   if (manhattanDistance(move, selected) === 1 || Math.abs(move.row - selected.row) * Math.abs(move.col - selected.col) === 1) {
     return true
