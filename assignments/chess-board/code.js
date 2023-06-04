@@ -92,7 +92,7 @@ const rookMove = (move, selected) => {
 }
 
 const manhattanDistance = (move, selected) => {
-  Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col)
+  return Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col)
 }
 
 const knightMove = (move, selected) => {
