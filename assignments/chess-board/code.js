@@ -46,7 +46,7 @@ const drawBoard = () => {
       const color = (r + c) % 2 === 0 ? 'beige' : 'black'
       drawFilledRect(sideGap + (s * c), topGap + (s * r), s, s, color)
       if (pieces[r][c] !== undefined) {
-        drawText(pieces[r][c].icon, sideGap + (s * c), topGap + (s * (r + 1)), 'pink', 64)
+        drawText(pieces[r][c].icon, sideGap + (s * c), topGap + (s * (r + 1)), 'brown', 64)
       }
     }
   }
