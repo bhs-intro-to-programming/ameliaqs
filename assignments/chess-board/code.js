@@ -68,6 +68,7 @@ const legalMove = (move, selected) => {
     return bishopMove(move, selected)
   } else if (selected.piece.kind === 'queen') {
     return queenMove(move, selected)
+  } else if (selected.piece.kind === 'king') {
   } else {
     console.log('nyi')
   }
@@ -128,9 +129,13 @@ const queenMove = (move, selected) => {
   }
 }
 
-//const kingMove = (move, selected) => {
-// if ()
-//}
+const kingMove = (move, selected) => {
+  if (manhattanDistance(move, selected) === 1) {
+    return true
+  } else {
+    return false
+  }
+}
 
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
