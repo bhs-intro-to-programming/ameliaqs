@@ -108,7 +108,7 @@ const bishopMove = (move, selected) => {
 }
 
 const queenMove = (move, selected) => {
-  if (rookMove && bishopMove) {
+  if (rookMove || bishopMove) {
     return true
   } else {
     return false
