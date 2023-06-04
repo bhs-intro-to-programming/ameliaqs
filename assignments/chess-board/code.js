@@ -98,10 +98,8 @@ const manhattanDistance = (move, selected) => {
 
 const knightMove = (move, selected) => {
   if (manhattanDistance(move, selected) === 3 && Math.abs(move.col - selected.col) !== 0) {
-    console.log(manhattanDistance(move, selected))
     return true
   } else {
-    console.log(manhattanDistance(move, selected))
     return false
   }
 }
