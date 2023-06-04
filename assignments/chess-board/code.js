@@ -123,7 +123,7 @@ const bishopMove = (move, selected) => {
 
 // is allowing all moves :(
 const queenMove = (move, selected) => {
-  if (rookMove || bishopMove) {
+  if (rookMove(move, selected) || bishopMove(move, selected)) {
     return true
   } else {
     return false
