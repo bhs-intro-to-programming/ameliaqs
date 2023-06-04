@@ -91,7 +91,18 @@ const rookMove = (move, selected) => {
   }
 }
 
+const manhattanDistance = (move, selected) => {
+  Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col)
+}
+
 const knightMove = (move, selected) => {
+  if (manhattanDistance === 3 && Math.abs(move.col - selected.col) !== 0) {
+    return true
+  } else {
+    return false
+  }
+}
+const xknightMove = (move, selected) => {
   if (Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col) === 3 && Math.abs(move.row - selected.row) * Math.abs(move.col - selected.col) !== 0) {
     return true
   } else {
@@ -107,12 +118,17 @@ const bishopMove = (move, selected) => {
   }
 }
 
+// is allowing all moves :(
 const queenMove = (move, selected) => {
   if (rookMove || bishopMove) {
     return true
   } else {
     return false
   }
+}
+
+const kingMove = (move, selected) => {
+  if ()
 }
 
 registerOnclick((x, y) => {
