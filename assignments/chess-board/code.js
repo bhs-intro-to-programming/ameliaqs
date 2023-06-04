@@ -121,7 +121,6 @@ const bishopMove = (move, selected) => {
   }
 }
 
-// is allowing all moves :(
 const queenMove = (move, selected) => {
   if (rookMove(move, selected) || bishopMove(move, selected)) {
     return true
@@ -132,7 +131,7 @@ const queenMove = (move, selected) => {
 
 // add diagonal movement
 const kingMove = (move, selected) => {
-  if (manhattanDistance(move, selected) === 1) {
+  if (manhattanDistance(move, selected) === 1 || Math.abs(move.row - selected.row) * Math.abs(move.col - selected.col) === 1) {
     return true
   } else {
     return false
