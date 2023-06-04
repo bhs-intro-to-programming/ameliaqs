@@ -127,9 +127,9 @@ const queenMove = (move, selected) => {
   }
 }
 
-const kingMove = (move, selected) => {
-  if ()
-}
+//const kingMove = (move, selected) => {
+ // if ()
+//}
 
 registerOnclick((x, y) => {
   let c = Math.floor((x - sideGap) / s)
