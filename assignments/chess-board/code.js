@@ -133,6 +133,7 @@ const kingMove = (move, selected) => {
   if (manhattanDistance(move, selected) === 1) {
     return true
   } else {
+    console.log(manhattanDistance(move, selected))
     return false
   }
 }
