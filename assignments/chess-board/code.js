@@ -63,7 +63,6 @@ const legalMove = (move, selected) => {
   } else if (selected.piece.kind === 'rook') {
     return rookMove(move, selected)
   } else if (selected.piece.kind === 'knight') {
-    console.log(selected.piece.kind)
     return knightMove(move, selected)
   } else {
     console.log('nyi')
@@ -89,7 +88,7 @@ const rookMove = (move, selected) => {
 }
 
 const knightMove = (move, selected) => {
-  if (Math.abs(move.row - selected.row) === 2) {
+  if (Math.abs(move.row - selected.row) === 2 && Math.abs(move.row - selected.row) + Math.abs(move.col - selected.col) === 3) {
     return true
   } else {
     return false
