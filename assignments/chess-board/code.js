@@ -76,7 +76,7 @@ const legalMove = (move, selected) => {
 }
 
 const pawnMove = (move, selected, direction) => {
-  if ((move.row + direction) === selected.row && move.col === selected.col && pieces[selected.row][selected.col] !== undefined) {
+  if ((move.row + direction) === selected.row && move.col === selected.col && pieces[selected.row][selected.col] === undefined) {
     return true
   } else {
     console.log('false')
